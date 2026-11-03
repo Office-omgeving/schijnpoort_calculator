@@ -1,0 +1,2442 @@
+{
+  "Overzicht": {
+    "A1": {
+      "value": "Offertebouwer — berekeningen",
+      "formula": null
+    },
+    "B1": {
+      "value": null,
+      "formula": null
+    },
+    "C1": {
+      "value": null,
+      "formula": null
+    },
+    "D1": {
+      "value": null,
+      "formula": null
+    },
+    "E1": {
+      "value": null,
+      "formula": null
+    },
+    "F1": {
+      "value": null,
+      "formula": null
+    },
+    "G1": {
+      "value": null,
+      "formula": null
+    },
+    "H1": {
+      "value": null,
+      "formula": null
+    },
+    "A2": {
+      "value": "Actuele prijslogica uit de offertebouwer. Bedragen zijn excl. BTW, tenzij anders vermeld.",
+      "formula": null
+    },
+    "B2": {
+      "value": null,
+      "formula": null
+    },
+    "C2": {
+      "value": null,
+      "formula": null
+    },
+    "D2": {
+      "value": null,
+      "formula": null
+    },
+    "E2": {
+      "value": null,
+      "formula": null
+    },
+    "F2": {
+      "value": null,
+      "formula": null
+    },
+    "G2": {
+      "value": null,
+      "formula": null
+    },
+    "H2": {
+      "value": null,
+      "formula": null
+    },
+    "A4": {
+      "value": "Berekeningsvolgorde",
+      "formula": null
+    },
+    "B4": {
+      "value": null,
+      "formula": null
+    },
+    "C4": {
+      "value": null,
+      "formula": null
+    },
+    "D4": {
+      "value": null,
+      "formula": null
+    },
+    "E4": {
+      "value": null,
+      "formula": null
+    },
+    "F4": {
+      "value": null,
+      "formula": null
+    },
+    "G4": {
+      "value": null,
+      "formula": null
+    },
+    "H4": {
+      "value": null,
+      "formula": null
+    },
+    "A5": {
+      "value": "Stap",
+      "formula": null
+    },
+    "B5": {
+      "value": "Onderdeel",
+      "formula": null
+    },
+    "C5": {
+      "value": "Berekening / beslissing",
+      "formula": null
+    },
+    "D5": {
+      "value": "Opmerking",
+      "formula": null
+    },
+    "A6": {
+      "value": "1",
+      "formula": null
+    },
+    "B6": {
+      "value": "Schrijnwerk",
+      "formula": null
+    },
+    "C6": {
+      "value": "Basisprijs × glasfactor × kleurfactor × openingsfactor; daarna oude prijsformule en marge.",
+      "formula": null
+    },
+    "D6": {
+      "value": "Zie tab Schrijnwerk",
+      "formula": null
+    },
+    "A7": {
+      "value": "2",
+      "formula": null
+    },
+    "B7": {
+      "value": "Afbraak",
+      "formula": null
+    },
+    "C7": {
+      "value": "Per element volgens gewichtsklasse.",
+      "formula": null
+    },
+    "D7": {
+      "value": "Zie tab Diensten",
+      "formula": null
+    },
+    "A8": {
+      "value": "3",
+      "formula": null
+    },
+    "B8": {
+      "value": "Recyclage",
+      "formula": null
+    },
+    "C8": {
+      "value": "Totaal gewicht in ton × € 350/ton.",
+      "formula": null
+    },
+    "D8": {
+      "value": "Apart van afbraak",
+      "formula": null
+    },
+    "A9": {
+      "value": "4",
+      "formula": null
+    },
+    "B9": {
+      "value": "Plaatsing",
+      "formula": null
+    },
+    "C9": {
+      "value": "Per element volgens producttype en gewichtsklasse.",
+      "formula": null
+    },
+    "D9": {
+      "value": "Zie tab Diensten",
+      "formula": null
+    },
+    "A10": {
+      "value": "5",
+      "formula": null
+    },
+    "B10": {
+      "value": "Siliconeren / zwelband",
+      "formula": null
+    },
+    "C10": {
+      "value": "Omtrek × tarief per lopende meter.",
+      "formula": null
+    },
+    "D10": {
+      "value": "Zwelband bij gevelrenovatie",
+      "formula": null
+    },
+    "A11": {
+      "value": "6",
+      "formula": null
+    },
+    "B11": {
+      "value": "Binnenafwerking",
+      "formula": null
+    },
+    "C11": {
+      "value": "Forfait per element volgens afwerking en m²-klasse.",
+      "formula": null
+    },
+    "D11": {
+      "value": "Rolluikbak komt aanvullend erbij",
+      "formula": null
+    },
+    "A12": {
+      "value": "7",
+      "formula": null
+    },
+    "B12": {
+      "value": "Gevel / dak",
+      "formula": null
+    },
+    "C12": {
+      "value": "Oppervlakte, kleine-oppervlaktefactor en opties.",
+      "formula": null
+    },
+    "D12": {
+      "value": "Zie tab Gevel & dak",
+      "formula": null
+    },
+    "A13": {
+      "value": "8",
+      "formula": null
+    },
+    "B13": {
+      "value": "BTW",
+      "formula": null
+    },
+    "C13": {
+      "value": "Subtotaal × 6% (oude woning) of 21%.",
+      "formula": null
+    },
+    "D13": {
+      "value": "Zie tab Premies & BTW",
+      "formula": null
+    },
+    "A16": {
+      "value": "Algemene parameters",
+      "formula": null
+    },
+    "B16": {
+      "value": null,
+      "formula": null
+    },
+    "C16": {
+      "value": null,
+      "formula": null
+    },
+    "D16": {
+      "value": null,
+      "formula": null
+    },
+    "E16": {
+      "value": null,
+      "formula": null
+    },
+    "F16": {
+      "value": null,
+      "formula": null
+    },
+    "G16": {
+      "value": null,
+      "formula": null
+    },
+    "H16": {
+      "value": null,
+      "formula": null
+    },
+    "A17": {
+      "value": "Parameter",
+      "formula": null
+    },
+    "B17": {
+      "value": "Waarde",
+      "formula": null
+    },
+    "C17": {
+      "value": "Eenheid",
+      "formula": null
+    },
+    "D17": {
+      "value": "Toepassing",
+      "formula": null
+    },
+    "A18": {
+      "value": "Minimum afmeting",
+      "formula": null
+    },
+    "B18": {
+      "value": "350",
+      "formula": null
+    },
+    "C18": {
+      "value": "mm per richting",
+      "formula": null
+    },
+    "D18": {
+      "value": "Invoer van elk raam/deur/poort",
+      "formula": null
+    },
+    "A19": {
+      "value": "Recyclage",
+      "formula": null
+    },
+    "B19": {
+      "value": "350",
+      "formula": null
+    },
+    "C19": {
+      "value": "€/ton",
+      "formula": null
+    },
+    "D19": {
+      "value": "Gewicht × 350 / 1.000",
+      "formula": null
+    },
+    "A20": {
+      "value": "Siliconeren",
+      "formula": null
+    },
+    "B20": {
+      "value": "7",
+      "formula": null
+    },
+    "C20": {
+      "value": "€/lm",
+      "formula": null
+    },
+    "D20": {
+      "value": "Standaard, zonder gevelrenovatie",
+      "formula": null
+    },
+    "A21": {
+      "value": "Zwelband",
+      "formula": null
+    },
+    "B21": {
+      "value": "6",
+      "formula": null
+    },
+    "C21": {
+      "value": "€/lm",
+      "formula": null
+    },
+    "D21": {
+      "value": "Bij actieve gevelrenovatie",
+      "formula": null
+    },
+    "A22": {
+      "value": "Rolluik / zonnewering",
+      "formula": null
+    },
+    "B22": {
+      "value": "350",
+      "formula": null
+    },
+    "C22": {
+      "value": "€/lm breedte",
+      "formula": null
+    },
+    "D22": {
+      "value": "Schrijnwerktoeslag",
+      "formula": null
+    },
+    "A23": {
+      "value": "Oude prijsfactor",
+      "formula": null
+    },
+    "B23": {
+      "value": "0.95",
+      "formula": null
+    },
+    "C23": {
+      "value": "factor",
+      "formula": null
+    },
+    "D23": {
+      "value": "Na basis-, kleur- en openingsfactor",
+      "formula": null
+    },
+    "A24": {
+      "value": "Verkoopmarge",
+      "formula": null
+    },
+    "B24": {
+      "value": "0.35",
+      "formula": null
+    },
+    "C24": {
+      "value": "factor",
+      "formula": null
+    },
+    "D24": {
+      "value": "Basis kost × (1 + marge)",
+      "formula": null
+    },
+    "A25": {
+      "value": "BTW oude woning",
+      "formula": null
+    },
+    "B25": {
+      "value": "0.06",
+      "formula": null
+    },
+    "C25": {
+      "value": "factor",
+      "formula": null
+    },
+    "D25": {
+      "value": "Totaal excl. BTW",
+      "formula": null
+    },
+    "A26": {
+      "value": "BTW andere woning",
+      "formula": null
+    },
+    "B26": {
+      "value": "0.21",
+      "formula": null
+    },
+    "C26": {
+      "value": "factor",
+      "formula": null
+    },
+    "D26": {
+      "value": "Totaal excl. BTW",
+      "formula": null
+    },
+    "B27": {
+      "value": null,
+      "formula": null
+    }
+  },
+  "Schrijnwerk": {
+    "A1": {
+      "value": "Schrijnwerk",
+      "formula": null
+    },
+    "B1": {
+      "value": null,
+      "formula": null
+    },
+    "C1": {
+      "value": null,
+      "formula": null
+    },
+    "D1": {
+      "value": null,
+      "formula": null
+    },
+    "E1": {
+      "value": null,
+      "formula": null
+    },
+    "F1": {
+      "value": null,
+      "formula": null
+    },
+    "G1": {
+      "value": null,
+      "formula": null
+    },
+    "H1": {
+      "value": null,
+      "formula": null
+    },
+    "A2": {
+      "value": "Basisprijs, vermenigvuldigingsfactoren, gewicht en de opbouw tot verkoopprijs excl. BTW.",
+      "formula": null
+    },
+    "B2": {
+      "value": null,
+      "formula": null
+    },
+    "C2": {
+      "value": null,
+      "formula": null
+    },
+    "D2": {
+      "value": null,
+      "formula": null
+    },
+    "E2": {
+      "value": null,
+      "formula": null
+    },
+    "F2": {
+      "value": null,
+      "formula": null
+    },
+    "G2": {
+      "value": null,
+      "formula": null
+    },
+    "H2": {
+      "value": null,
+      "formula": null
+    },
+    "A4": {
+      "value": "Basisprijs per elementtype",
+      "formula": null
+    },
+    "B4": {
+      "value": null,
+      "formula": null
+    },
+    "C4": {
+      "value": null,
+      "formula": null
+    },
+    "D4": {
+      "value": null,
+      "formula": null
+    },
+    "E4": {
+      "value": null,
+      "formula": null
+    },
+    "F4": {
+      "value": null,
+      "formula": null
+    },
+    "G4": {
+      "value": null,
+      "formula": null
+    },
+    "H4": {
+      "value": null,
+      "formula": null
+    },
+    "A5": {
+      "value": "Element",
+      "formula": null
+    },
+    "B5": {
+      "value": "Basisformule vóór factoren",
+      "formula": null
+    },
+    "C5": {
+      "value": "Maat / variabele",
+      "formula": null
+    },
+    "D5": {
+      "value": "Opmerking",
+      "formula": null
+    },
+    "A6": {
+      "value": "Raam",
+      "formula": null
+    },
+    "B6": {
+      "value": "Zie raamformule hieronder",
+      "formula": null
+    },
+    "C6": {
+      "value": "m²",
+      "formula": null
+    },
+    "D6": {
+      "value": "Afhankelijk van oppervlak en verhouding",
+      "formula": null
+    },
+    "A7": {
+      "value": "Schuifraam",
+      "formula": null
+    },
+    "B7": {
+      "value": "€ 1.500 + (€ 270 × m²)",
+      "formula": null
+    },
+    "C7": {
+      "value": "m²",
+      "formula": null
+    },
+    "D7": {
+      "value": "Daarna glasfactor",
+      "formula": null
+    },
+    "A8": {
+      "value": "Deur",
+      "formula": null
+    },
+    "B8": {
+      "value": "€ 1.250",
+      "formula": null
+    },
+    "C8": {
+      "value": "stuk",
+      "formula": null
+    },
+    "D8": {
+      "value": "Daarna glasfactor",
+      "formula": null
+    },
+    "A9": {
+      "value": "Deur + zijlicht",
+      "formula": null
+    },
+    "B9": {
+      "value": "€ 1.250 + raamformule",
+      "formula": null
+    },
+    "C9": {
+      "value": "m²",
+      "formula": null
+    },
+    "D9": {
+      "value": "Daarna glasfactor",
+      "formula": null
+    },
+    "A10": {
+      "value": "Deur-element",
+      "formula": null
+    },
+    "B10": {
+      "value": "€ 1.250 + raamformule",
+      "formula": null
+    },
+    "C10": {
+      "value": "m²",
+      "formula": null
+    },
+    "D10": {
+      "value": "Daarna glasfactor",
+      "formula": null
+    },
+    "A11": {
+      "value": "Dubbele deur",
+      "formula": null
+    },
+    "B11": {
+      "value": "€ 1.800",
+      "formula": null
+    },
+    "C11": {
+      "value": "stuk",
+      "formula": null
+    },
+    "D11": {
+      "value": "Daarna glasfactor",
+      "formula": null
+    },
+    "A12": {
+      "value": "Sectionale poort",
+      "formula": null
+    },
+    "B12": {
+      "value": "€ 1.750",
+      "formula": null
+    },
+    "C12": {
+      "value": "stuk",
+      "formula": null
+    },
+    "D12": {
+      "value": "Geen glasfactor",
+      "formula": null
+    },
+    "A15": {
+      "value": "Raamformule vóór glasfactor",
+      "formula": null
+    },
+    "B15": {
+      "value": null,
+      "formula": null
+    },
+    "C15": {
+      "value": null,
+      "formula": null
+    },
+    "D15": {
+      "value": null,
+      "formula": null
+    },
+    "E15": {
+      "value": null,
+      "formula": null
+    },
+    "F15": {
+      "value": null,
+      "formula": null
+    },
+    "G15": {
+      "value": null,
+      "formula": null
+    },
+    "H15": {
+      "value": null,
+      "formula": null
+    },
+    "A16": {
+      "value": "Voorwaarde",
+      "formula": null
+    },
+    "B16": {
+      "value": "Basisprijs",
+      "formula": null
+    },
+    "A17": {
+      "value": "2,0 ≤ m² ≤ 3,5 én langste/kortste zijde ≥ 2,7",
+      "formula": null
+    },
+    "B17": {
+      "value": "€ 190 × m²",
+      "formula": null
+    },
+    "A18": {
+      "value": "2,0 ≤ m² < 2,5 én verhouding < 2,7",
+      "formula": null
+    },
+    "B18": {
+      "value": "€ 140 × m²",
+      "formula": null
+    },
+    "A19": {
+      "value": "2,5 ≤ m² ≤ 3,5 én verhouding < 2,7",
+      "formula": null
+    },
+    "B19": {
+      "value": "€ 130 × m²",
+      "formula": null
+    },
+    "A20": {
+      "value": "Andere maten",
+      "formula": null
+    },
+    "B20": {
+      "value": "€ 38,18 + (€ 105,11 × m²) + (€ 16,01 × m²²) + (€ 96,87 × slank) + (€ 23,62 × klein)",
+      "formula": null
+    },
+    "A21": {
+      "value": "Slank",
+      "formula": null
+    },
+    "B21": {
+      "value": "1 enkel bij exact 500 × 3.000 mm; anders 0",
+      "formula": null
+    },
+    "A22": {
+      "value": "Klein",
+      "formula": null
+    },
+    "B22": {
+      "value": "1 bij m² ≤ 1,25; anders 0",
+      "formula": null
+    },
+    "A25": {
+      "value": "Glas- en kleurfactoren",
+      "formula": null
+    },
+    "B25": {
+      "value": null,
+      "formula": null
+    },
+    "C25": {
+      "value": null,
+      "formula": null
+    },
+    "D25": {
+      "value": null,
+      "formula": null
+    },
+    "E25": {
+      "value": null,
+      "formula": null
+    },
+    "F25": {
+      "value": null,
+      "formula": null
+    },
+    "G25": {
+      "value": null,
+      "formula": null
+    },
+    "H25": {
+      "value": null,
+      "formula": null
+    },
+    "A26": {
+      "value": "Keuze",
+      "formula": null
+    },
+    "B26": {
+      "value": "Raam",
+      "formula": null
+    },
+    "C26": {
+      "value": "Schuifraam",
+      "formula": null
+    },
+    "D26": {
+      "value": "Deuren",
+      "formula": null
+    },
+    "E26": {
+      "value": "Toelichting",
+      "formula": null
+    },
+    "A27": {
+      "value": "PVC dubbel / paneel",
+      "formula": null
+    },
+    "B27": {
+      "value": "1.25",
+      "formula": null
+    },
+    "C27": {
+      "value": "0.9",
+      "formula": null
+    },
+    "D27": {
+      "value": "0.9",
+      "formula": null
+    },
+    "E27": {
+      "value": "Factor op basisprijs",
+      "formula": null
+    },
+    "A28": {
+      "value": "PVC driedubbel",
+      "formula": null
+    },
+    "B28": {
+      "value": "1.5625",
+      "formula": null
+    },
+    "C28": {
+      "value": "1",
+      "formula": null
+    },
+    "D28": {
+      "value": "1",
+      "formula": null
+    },
+    "E28": {
+      "value": "Raam: 1,25 × 1,25",
+      "formula": null
+    },
+    "A29": {
+      "value": "Alu dubbel",
+      "formula": null
+    },
+    "B29": {
+      "value": "3.125",
+      "formula": null
+    },
+    "C29": {
+      "value": "2",
+      "formula": null
+    },
+    "D29": {
+      "value": "2",
+      "formula": null
+    },
+    "E29": {
+      "value": "PVC driedubbel-factor × 2",
+      "formula": null
+    },
+    "A30": {
+      "value": "Alu driedubbel",
+      "formula": null
+    },
+    "B30": {
+      "value": "3.4375",
+      "formula": null
+    },
+    "C30": {
+      "value": "2.2000000000000002",
+      "formula": null
+    },
+    "D30": {
+      "value": "2.2000000000000002",
+      "formula": null
+    },
+    "E30": {
+      "value": "Alu dubbel × 1,10",
+      "formula": null
+    },
+    "A31": {
+      "value": "Alu passief",
+      "formula": null
+    },
+    "B31": {
+      "value": "4.296875",
+      "formula": null
+    },
+    "C31": {
+      "value": "2.75",
+      "formula": null
+    },
+    "D31": {
+      "value": "2.75",
+      "formula": null
+    },
+    "E31": {
+      "value": "Alu driedubbel × 1,25",
+      "formula": null
+    },
+    "A34": {
+      "value": "Kleur",
+      "formula": null
+    },
+    "B34": {
+      "value": "PVC: < 3,5 m²",
+      "formula": null
+    },
+    "C34": {
+      "value": "PVC: ≥ 3,5 m²",
+      "formula": null
+    },
+    "D34": {
+      "value": "Aluminium",
+      "formula": null
+    },
+    "A35": {
+      "value": "Standaard",
+      "formula": null
+    },
+    "B35": {
+      "value": "1",
+      "formula": null
+    },
+    "C35": {
+      "value": "1",
+      "formula": null
+    },
+    "D35": {
+      "value": "1",
+      "formula": null
+    },
+    "A36": {
+      "value": "Kleur 1 kant",
+      "formula": null
+    },
+    "B36": {
+      "value": "1.1000000000000001",
+      "formula": null
+    },
+    "C36": {
+      "value": "1.05",
+      "formula": null
+    },
+    "D36": {
+      "value": "1",
+      "formula": null
+    },
+    "A37": {
+      "value": "Kleur 2 kanten",
+      "formula": null
+    },
+    "B37": {
+      "value": "1.25",
+      "formula": null
+    },
+    "C37": {
+      "value": "1.1000000000000001",
+      "formula": null
+    },
+    "D37": {
+      "value": "1.1000000000000001",
+      "formula": null
+    },
+    "A40": {
+      "value": "Openingsfactor en verkoopprijs",
+      "formula": null
+    },
+    "B40": {
+      "value": null,
+      "formula": null
+    },
+    "C40": {
+      "value": null,
+      "formula": null
+    },
+    "D40": {
+      "value": null,
+      "formula": null
+    },
+    "E40": {
+      "value": null,
+      "formula": null
+    },
+    "F40": {
+      "value": null,
+      "formula": null
+    },
+    "G40": {
+      "value": null,
+      "formula": null
+    },
+    "H40": {
+      "value": null,
+      "formula": null
+    },
+    "A41": {
+      "value": "Onderdeel",
+      "formula": null
+    },
+    "B41": {
+      "value": "Formule",
+      "formula": null
+    },
+    "A42": {
+      "value": "Draai/kiep raam ≤ 1 m²",
+      "formula": null
+    },
+    "B42": {
+      "value": "openingsfactor = 2,00",
+      "formula": null
+    },
+    "A43": {
+      "value": "Draai/kiep raam > 1 m²",
+      "formula": null
+    },
+    "B43": {
+      "value": "openingsfactor = 1,40",
+      "formula": null
+    },
+    "A44": {
+      "value": "Andere elementen / vast raam",
+      "formula": null
+    },
+    "B44": {
+      "value": "openingsfactor = 1,00",
+      "formula": null
+    },
+    "A45": {
+      "value": "Oude elementprijs",
+      "formula": null
+    },
+    "B45": {
+      "value": "(basisprijs × glasfactor × 1,10 × openingsfactor × kleurfactor + rolluik/zonnewering) × 0,95",
+      "formula": null
+    },
+    "A46": {
+      "value": "Basiskost",
+      "formula": null
+    },
+    "B46": {
+      "value": "oude elementprijs × (0,75 / 1,35)",
+      "formula": null
+    },
+    "A47": {
+      "value": "Verkoopprijs excl. BTW",
+      "formula": null
+    },
+    "B47": {
+      "value": "basiskost × (1 + 35%)",
+      "formula": null
+    },
+    "A50": {
+      "value": "Gewicht",
+      "formula": null
+    },
+    "B50": {
+      "value": null,
+      "formula": null
+    },
+    "C50": {
+      "value": null,
+      "formula": null
+    },
+    "D50": {
+      "value": null,
+      "formula": null
+    },
+    "E50": {
+      "value": null,
+      "formula": null
+    },
+    "F50": {
+      "value": null,
+      "formula": null
+    },
+    "G50": {
+      "value": null,
+      "formula": null
+    },
+    "H50": {
+      "value": null,
+      "formula": null
+    },
+    "A51": {
+      "value": "Element",
+      "formula": null
+    },
+    "B51": {
+      "value": "Gewicht / formule",
+      "formula": null
+    },
+    "A52": {
+      "value": "Raam / schuifraam",
+      "formula": null
+    },
+    "B52": {
+      "value": "glasgewicht + profielgewicht",
+      "formula": null
+    },
+    "A53": {
+      "value": "Glasgewicht dubbel / driedubbel",
+      "formula": null
+    },
+    "B53": {
+      "value": "(breedte − 13 cm) × (hoogte − 13 cm) × 20 / 30 kg per m²",
+      "formula": null
+    },
+    "A54": {
+      "value": "Profielgewicht dubbel / driedubbel",
+      "formula": null
+    },
+    "B54": {
+      "value": "2 × (breedte + hoogte) × 6 / 8 kg per lm",
+      "formula": null
+    },
+    "A55": {
+      "value": "Enkele deur",
+      "formula": null
+    },
+    "B55": {
+      "value": "110 kg forfait",
+      "formula": null
+    },
+    "A56": {
+      "value": "Deur + zijlicht",
+      "formula": null
+    },
+    "B56": {
+      "value": "140 kg forfait",
+      "formula": null
+    },
+    "A57": {
+      "value": "Dubbele deur",
+      "formula": null
+    },
+    "B57": {
+      "value": "190 kg forfait",
+      "formula": null
+    },
+    "A58": {
+      "value": "Deur-element",
+      "formula": null
+    },
+    "B58": {
+      "value": "110 kg + berekend raamgewicht",
+      "formula": null
+    },
+    "A59": {
+      "value": "Poort",
+      "formula": null
+    },
+    "B59": {
+      "value": "140 kg forfait",
+      "formula": null
+    }
+  },
+  "Diensten": {
+    "A1": {
+      "value": "Diensten en afwerking",
+      "formula": null
+    },
+    "B1": {
+      "value": null,
+      "formula": null
+    },
+    "C1": {
+      "value": null,
+      "formula": null
+    },
+    "D1": {
+      "value": null,
+      "formula": null
+    },
+    "E1": {
+      "value": null,
+      "formula": null
+    },
+    "F1": {
+      "value": null,
+      "formula": null
+    },
+    "G1": {
+      "value": null,
+      "formula": null
+    },
+    "H1": {
+      "value": null,
+      "formula": null
+    },
+    "A2": {
+      "value": "Afbraak, recyclage, plaatsing, siliconeren en binnenafwerking worden afzonderlijk berekend.",
+      "formula": null
+    },
+    "B2": {
+      "value": null,
+      "formula": null
+    },
+    "C2": {
+      "value": null,
+      "formula": null
+    },
+    "D2": {
+      "value": null,
+      "formula": null
+    },
+    "E2": {
+      "value": null,
+      "formula": null
+    },
+    "F2": {
+      "value": null,
+      "formula": null
+    },
+    "G2": {
+      "value": null,
+      "formula": null
+    },
+    "H2": {
+      "value": null,
+      "formula": null
+    },
+    "A4": {
+      "value": "Afbraak per element volgens gewicht",
+      "formula": null
+    },
+    "B4": {
+      "value": null,
+      "formula": null
+    },
+    "C4": {
+      "value": null,
+      "formula": null
+    },
+    "D4": {
+      "value": null,
+      "formula": null
+    },
+    "E4": {
+      "value": null,
+      "formula": null
+    },
+    "F4": {
+      "value": null,
+      "formula": null
+    },
+    "G4": {
+      "value": null,
+      "formula": null
+    },
+    "H4": {
+      "value": null,
+      "formula": null
+    },
+    "A5": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "B5": {
+      "value": "Van kg",
+      "formula": null
+    },
+    "C5": {
+      "value": "Tot kg",
+      "formula": null
+    },
+    "D5": {
+      "value": "Tarief €/stuk",
+      "formula": null
+    },
+    "A6": {
+      "value": "Tot 100 kg",
+      "formula": null
+    },
+    "B6": {
+      "value": "0",
+      "formula": null
+    },
+    "C6": {
+      "value": "100",
+      "formula": null
+    },
+    "D6": {
+      "value": "80",
+      "formula": null
+    },
+    "A7": {
+      "value": "100 tot 150 kg",
+      "formula": null
+    },
+    "B7": {
+      "value": "100",
+      "formula": null
+    },
+    "C7": {
+      "value": "150",
+      "formula": null
+    },
+    "D7": {
+      "value": "100",
+      "formula": null
+    },
+    "A8": {
+      "value": "150 tot 200 kg",
+      "formula": null
+    },
+    "B8": {
+      "value": "150",
+      "formula": null
+    },
+    "C8": {
+      "value": "200",
+      "formula": null
+    },
+    "D8": {
+      "value": "110",
+      "formula": null
+    },
+    "A9": {
+      "value": "200 tot 300 kg",
+      "formula": null
+    },
+    "B9": {
+      "value": "200",
+      "formula": null
+    },
+    "C9": {
+      "value": "300",
+      "formula": null
+    },
+    "D9": {
+      "value": "170",
+      "formula": null
+    },
+    "A10": {
+      "value": "300 tot 400 kg",
+      "formula": null
+    },
+    "B10": {
+      "value": "300",
+      "formula": null
+    },
+    "C10": {
+      "value": "400",
+      "formula": null
+    },
+    "D10": {
+      "value": "320",
+      "formula": null
+    },
+    "A11": {
+      "value": "400 kg en meer",
+      "formula": null
+    },
+    "B11": {
+      "value": "400",
+      "formula": null
+    },
+    "C11": {
+      "value": "∞",
+      "formula": null
+    },
+    "D11": {
+      "value": "400",
+      "formula": null
+    },
+    "A14": {
+      "value": "Plaatsing per element",
+      "formula": null
+    },
+    "B14": {
+      "value": null,
+      "formula": null
+    },
+    "C14": {
+      "value": null,
+      "formula": null
+    },
+    "D14": {
+      "value": null,
+      "formula": null
+    },
+    "E14": {
+      "value": null,
+      "formula": null
+    },
+    "F14": {
+      "value": null,
+      "formula": null
+    },
+    "G14": {
+      "value": null,
+      "formula": null
+    },
+    "H14": {
+      "value": null,
+      "formula": null
+    },
+    "A15": {
+      "value": "Element",
+      "formula": null
+    },
+    "B15": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "C15": {
+      "value": "Tarief €/stuk",
+      "formula": null
+    },
+    "D15": {
+      "value": "Regel",
+      "formula": null
+    },
+    "A16": {
+      "value": "Raam",
+      "formula": null
+    },
+    "B16": {
+      "value": "≤ 100 kg",
+      "formula": null
+    },
+    "C16": {
+      "value": "175",
+      "formula": null
+    },
+    "D16": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A17": {
+      "value": "Raam",
+      "formula": null
+    },
+    "B17": {
+      "value": "100–150 kg",
+      "formula": null
+    },
+    "C17": {
+      "value": "220",
+      "formula": null
+    },
+    "D17": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A18": {
+      "value": "Raam",
+      "formula": null
+    },
+    "B18": {
+      "value": "150–200 kg",
+      "formula": null
+    },
+    "C18": {
+      "value": "250",
+      "formula": null
+    },
+    "D18": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A19": {
+      "value": "Raam",
+      "formula": null
+    },
+    "B19": {
+      "value": "200–300 kg",
+      "formula": null
+    },
+    "C19": {
+      "value": "370",
+      "formula": null
+    },
+    "D19": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A20": {
+      "value": "Raam",
+      "formula": null
+    },
+    "B20": {
+      "value": "> 300 kg",
+      "formula": null
+    },
+    "C20": {
+      "value": "480",
+      "formula": null
+    },
+    "D20": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A21": {
+      "value": "Schuifraam",
+      "formula": null
+    },
+    "B21": {
+      "value": "≤ 200 kg",
+      "formula": null
+    },
+    "C21": {
+      "value": "370",
+      "formula": null
+    },
+    "D21": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A22": {
+      "value": "Schuifraam",
+      "formula": null
+    },
+    "B22": {
+      "value": "200–400 kg",
+      "formula": null
+    },
+    "C22": {
+      "value": "570",
+      "formula": null
+    },
+    "D22": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A23": {
+      "value": "Schuifraam",
+      "formula": null
+    },
+    "B23": {
+      "value": "400–600 kg",
+      "formula": null
+    },
+    "C23": {
+      "value": "750",
+      "formula": null
+    },
+    "D23": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A24": {
+      "value": "Schuifraam",
+      "formula": null
+    },
+    "B24": {
+      "value": "> 600 kg",
+      "formula": null
+    },
+    "C24": {
+      "value": "900",
+      "formula": null
+    },
+    "D24": {
+      "value": "Gewichtsklasse",
+      "formula": null
+    },
+    "A25": {
+      "value": "Enkele deur",
+      "formula": null
+    },
+    "B25": {
+      "value": "vast",
+      "formula": null
+    },
+    "C25": {
+      "value": "260",
+      "formula": null
+    },
+    "D25": {
+      "value": "Forfait",
+      "formula": null
+    },
+    "A26": {
+      "value": "Deur + zijlicht",
+      "formula": null
+    },
+    "B26": {
+      "value": "vast",
+      "formula": null
+    },
+    "C26": {
+      "value": "320",
+      "formula": null
+    },
+    "D26": {
+      "value": "Forfait",
+      "formula": null
+    },
+    "A27": {
+      "value": "Dubbele deur",
+      "formula": null
+    },
+    "B27": {
+      "value": "vast",
+      "formula": null
+    },
+    "C27": {
+      "value": "385",
+      "formula": null
+    },
+    "D27": {
+      "value": "Forfait",
+      "formula": null
+    },
+    "A28": {
+      "value": "Deur-element",
+      "formula": null
+    },
+    "B28": {
+      "value": "vast",
+      "formula": null
+    },
+    "C28": {
+      "value": "550",
+      "formula": null
+    },
+    "D28": {
+      "value": "Forfait",
+      "formula": null
+    },
+    "A29": {
+      "value": "Sectionale poort",
+      "formula": null
+    },
+    "B29": {
+      "value": "vast",
+      "formula": null
+    },
+    "C29": {
+      "value": "680",
+      "formula": null
+    },
+    "D29": {
+      "value": "Forfait",
+      "formula": null
+    },
+    "A32": {
+      "value": "Recyclage en afdichting",
+      "formula": null
+    },
+    "B32": {
+      "value": null,
+      "formula": null
+    },
+    "C32": {
+      "value": null,
+      "formula": null
+    },
+    "D32": {
+      "value": null,
+      "formula": null
+    },
+    "E32": {
+      "value": null,
+      "formula": null
+    },
+    "F32": {
+      "value": null,
+      "formula": null
+    },
+    "G32": {
+      "value": null,
+      "formula": null
+    },
+    "H32": {
+      "value": null,
+      "formula": null
+    },
+    "A33": {
+      "value": "Onderdeel",
+      "formula": null
+    },
+    "B33": {
+      "value": "Berekening",
+      "formula": null
+    },
+    "C33": {
+      "value": "Tarief",
+      "formula": null
+    },
+    "A34": {
+      "value": "Recyclage",
+      "formula": null
+    },
+    "B34": {
+      "value": "(gewicht in kg / 1.000) × € 350",
+      "formula": null
+    },
+    "C34": {
+      "value": "350",
+      "formula": null
+    },
+    "A35": {
+      "value": "Siliconeren",
+      "formula": null
+    },
+    "B35": {
+      "value": "volledige omtrek in lm × € 7",
+      "formula": null
+    },
+    "C35": {
+      "value": "7",
+      "formula": null
+    },
+    "A36": {
+      "value": "Zwelband bij gevelrenovatie",
+      "formula": null
+    },
+    "B36": {
+      "value": "volledige omtrek in lm × € 6",
+      "formula": null
+    },
+    "C36": {
+      "value": "6",
+      "formula": null
+    },
+    "A37": {
+      "value": "Rolluik of zonnewering",
+      "formula": null
+    },
+    "B37": {
+      "value": "breedte in meter × € 350",
+      "formula": null
+    },
+    "C37": {
+      "value": "350",
+      "formula": null
+    },
+    "A40": {
+      "value": "Binnenafwerking per element",
+      "formula": null
+    },
+    "B40": {
+      "value": null,
+      "formula": null
+    },
+    "C40": {
+      "value": null,
+      "formula": null
+    },
+    "D40": {
+      "value": null,
+      "formula": null
+    },
+    "E40": {
+      "value": null,
+      "formula": null
+    },
+    "F40": {
+      "value": null,
+      "formula": null
+    },
+    "G40": {
+      "value": null,
+      "formula": null
+    },
+    "H40": {
+      "value": null,
+      "formula": null
+    },
+    "A41": {
+      "value": "Afwerking",
+      "formula": null
+    },
+    "B41": {
+      "value": "Oppervlakteklasse",
+      "formula": null
+    },
+    "C41": {
+      "value": "Forfait €/stuk",
+      "formula": null
+    },
+    "D41": {
+      "value": "Opmerking",
+      "formula": null
+    },
+    "A42": {
+      "value": "MDF",
+      "formula": null
+    },
+    "B42": {
+      "value": "≤ 5 m²",
+      "formula": null
+    },
+    "C42": {
+      "value": "230",
+      "formula": null
+    },
+    "D42": {
+      "value": "Alle zijden",
+      "formula": null
+    },
+    "A43": {
+      "value": "MDF",
+      "formula": null
+    },
+    "B43": {
+      "value": "> 5 tot ≤ 10 m²",
+      "formula": null
+    },
+    "C43": {
+      "value": "350",
+      "formula": null
+    },
+    "D43": {
+      "value": "Alle zijden",
+      "formula": null
+    },
+    "A44": {
+      "value": "MDF",
+      "formula": null
+    },
+    "B44": {
+      "value": "> 10 m²",
+      "formula": null
+    },
+    "C44": {
+      "value": "470",
+      "formula": null
+    },
+    "D44": {
+      "value": "Alle zijden",
+      "formula": null
+    },
+    "A45": {
+      "value": "PVC",
+      "formula": null
+    },
+    "B45": {
+      "value": "≤ 2,5 m²",
+      "formula": null
+    },
+    "C45": {
+      "value": "250",
+      "formula": null
+    },
+    "D45": {
+      "value": "Omlijsting; zonder standaard vensterbank",
+      "formula": null
+    },
+    "A46": {
+      "value": "PVC",
+      "formula": null
+    },
+    "B46": {
+      "value": "> 2,5 tot ≤ 5 m²",
+      "formula": null
+    },
+    "C46": {
+      "value": "360",
+      "formula": null
+    },
+    "D46": {
+      "value": "Omlijsting",
+      "formula": null
+    },
+    "A47": {
+      "value": "PVC",
+      "formula": null
+    },
+    "B47": {
+      "value": "> 5 tot ≤ 10 m²",
+      "formula": null
+    },
+    "C47": {
+      "value": "470",
+      "formula": null
+    },
+    "D47": {
+      "value": "Omlijsting",
+      "formula": null
+    },
+    "A48": {
+      "value": "PVC",
+      "formula": null
+    },
+    "B48": {
+      "value": "> 10 m²",
+      "formula": null
+    },
+    "C48": {
+      "value": "660",
+      "formula": null
+    },
+    "D48": {
+      "value": "Omlijsting",
+      "formula": null
+    },
+    "A49": {
+      "value": "Pleister",
+      "formula": null
+    },
+    "B49": {
+      "value": "≤ 2,5 m²",
+      "formula": null
+    },
+    "C49": {
+      "value": "300",
+      "formula": null
+    },
+    "D49": {
+      "value": "Omlijsting",
+      "formula": null
+    },
+    "A50": {
+      "value": "Pleister",
+      "formula": null
+    },
+    "B50": {
+      "value": "> 2,5 tot ≤ 5 m²",
+      "formula": null
+    },
+    "C50": {
+      "value": "450",
+      "formula": null
+    },
+    "D50": {
+      "value": "Omlijsting",
+      "formula": null
+    },
+    "A51": {
+      "value": "Pleister",
+      "formula": null
+    },
+    "B51": {
+      "value": "> 5 m²",
+      "formula": null
+    },
+    "C51": {
+      "value": "600",
+      "formula": null
+    },
+    "D51": {
+      "value": "Omlijsting",
+      "formula": null
+    },
+    "A52": {
+      "value": "MDF geïsoleerde rolluikbak",
+      "formula": null
+    },
+    "B52": {
+      "value": "breedte ≤ 3 m",
+      "formula": null
+    },
+    "C52": {
+      "value": "220",
+      "formula": null
+    },
+    "D52": {
+      "value": "Altijd bijkomend bij rolluik",
+      "formula": null
+    },
+    "A53": {
+      "value": "MDF geïsoleerde rolluikbak",
+      "formula": null
+    },
+    "B53": {
+      "value": "breedte > 3 m",
+      "formula": null
+    },
+    "C53": {
+      "value": "340",
+      "formula": null
+    },
+    "D53": {
+      "value": "Altijd bijkomend bij rolluik",
+      "formula": null
+    }
+  },
+  "Rekenvoorbeeld": {
+    "A1": {
+      "value": "Rekenvoorbeeld raam",
+      "formula": null
+    },
+    "B1": {
+      "value": null,
+      "formula": null
+    },
+    "C1": {
+      "value": null,
+      "formula": null
+    },
+    "D1": {
+      "value": null,
+      "formula": null
+    },
+    "E1": {
+      "value": null,
+      "formula": null
+    },
+    "F1": {
+      "value": null,
+      "formula": null
+    },
+    "G1": {
+      "value": null,
+      "formula": null
+    },
+    "H1": {
+      "value": null,
+      "formula": null
+    },
+    "A2": {
+      "value": "Pas de gele invoervelden aan. Dit voorbeeld toont de volledige opbouw voor één raam; de tabellen bevatten alle overige productregels.",
+      "formula": null
+    },
+    "B2": {
+      "value": null,
+      "formula": null
+    },
+    "C2": {
+      "value": null,
+      "formula": null
+    },
+    "D2": {
+      "value": null,
+      "formula": null
+    },
+    "E2": {
+      "value": null,
+      "formula": null
+    },
+    "F2": {
+      "value": null,
+      "formula": null
+    },
+    "G2": {
+      "value": null,
+      "formula": null
+    },
+    "H2": {
+      "value": null,
+      "formula": null
+    },
+    "A4": {
+      "value": "Invoer",
+      "formula": null
+    },
+    "B4": {
+      "value": null,
+      "formula": null
+    },
+    "C4": {
+      "value": null,
+      "formula": null
+    },
+    "D4": {
+      "value": null,
+      "formula": null
+    },
+    "E4": {
+      "value": null,
+      "formula": null
+    },
+    "F4": {
+      "value": null,
+      "formula": null
+    },
+    "G4": {
+      "value": null,
+      "formula": null
+    },
+    "H4": {
+      "value": null,
+      "formula": null
+    },
+    "A5": {
+      "value": "Invoer",
+      "formula": null
+    },
+    "B5": {
+      "value": "Waarde",
+      "formula": null
+    },
+    "C5": {
+      "value": "Eenheid / keuze",
+      "formula": null
+    },
+    "A6": {
+      "value": "Breedte",
+      "formula": null
+    },
+    "B6": {
+      "value": "1200",
+      "formula": null
+    },
+    "C6": {
+      "value": "mm",
+      "formula": null
+    },
+    "A7": {
+      "value": "Hoogte",
+      "formula": null
+    },
+    "B7": {
+      "value": "1450",
+      "formula": null
+    },
+    "C7": {
+      "value": "mm",
+      "formula": null
+    },
+    "A8": {
+      "value": "Aantal",
+      "formula": null
+    },
+    "B8": {
+      "value": "1",
+      "formula": null
+    },
+    "C8": {
+      "value": "stuk",
+      "formula": null
+    },
+    "A9": {
+      "value": "Glas",
+      "formula": null
+    },
+    "B9": {
+      "value": "PVC driedubbel",
+      "formula": null
+    },
+    "C9": {
+      "value": "PVC dubbel / PVC driedubbel / alu",
+      "formula": null
+    },
+    "A10": {
+      "value": "Kleur",
+      "formula": null
+    },
+    "B10": {
+      "value": "Standaard",
+      "formula": null
+    },
+    "C10": {
+      "value": "Standaard / Kleur 1 kant / Kleur 2 kanten",
+      "formula": null
+    },
+    "A11": {
+      "value": "Opening",
+      "formula": null
+    },
+    "B11": {
+      "value": "Draai/kiep",
+      "formula": null
+    },
+    "C11": {
+      "value": "Vast / Draai/kiep",
+      "formula": null
+    },
+    "A12": {
+      "value": "Rolluik / zonnewering",
+      "formula": null
+    },
+    "B12": {
+      "value": "Geen",
+      "formula": null
+    },
+    "C12": {
+      "value": "Geen / Rolluik / Zonnewering",
+      "formula": null
+    },
+    "A13": {
+      "value": "Afwerking",
+      "formula": null
+    },
+    "B13": {
+      "value": "MDF",
+      "formula": null
+    },
+    "C13": {
+      "value": "MDF / PVC / Pleister / Geen",
+      "formula": null
+    },
+    "A14": {
+      "value": "BTW-tarief",
+      "formula": null
+    },
+    "B14": {
+      "value": "0.06",
+      "formula": null
+    },
+    "C14": {
+      "value": "6% / 21%",
+      "formula": null
+    },
+    "A17": {
+      "value": "Berekening",
+      "formula": null
+    },
+    "B17": {
+      "value": null,
+      "formula": null
+    },
+    "C17": {
+      "value": null,
+      "formula": null
+    },
+    "D17": {
+      "value": null,
+      "formula": null
+    },
+    "E17": {
+      "value": null,
+      "formula": null
+    },
+    "F17": {
+      "value": null,
+      "formula": null
+    },
+    "G17": {
+      "value": null,
+      "formula": null
+    },
+    "H17": {
+      "value": null,
+      "formula": null
+    },
+    "A18": {
+      "value": "Stap",
+      "formula": null
+    },
+    "B18": {
+      "value": "Formule / resultaat",
+      "formula": null
+    },
+    "C18": {
+      "value": "Waarde",
+      "formula": null
+    },
+    "A19": {
+      "value": "Oppervlakte",
+      "formula": null
+    },
+    "B19": {
+      "value": "breedte × hoogte / 1.000.000",
+      "formula": null
+    },
+    "C19": {
+      "value": "1.74",
+      "formula": "B6*B7/1000000"
+    },
+    "A20": {
+      "value": "Omtrek",
+      "formula": null
+    },
+    "B20": {
+      "value": "2 × (breedte + hoogte) / 1.000",
+      "formula": null
+    },
+    "C20": {
+      "value": "5.3",
+      "formula": "2*(B6+B7)/1000"
+    },
+    "A21": {
+      "value": "Raambasisprijs",
+      "formula": null
+    },
+    "B21": {
+      "value": "prijsregel volgens m² en vorm",
+      "formula": null
+    },
+    "C21": {
+      "value": "269.54327599999999",
+      "formula": "IF(AND(C19>=2,C19<=3.5),IF(MAX(B6,B7)/MIN(B6,B7)>=2.7,190*C19,IF(C19<2.5,140*C19,130*C19)),38.18+105.11*C19+16.01*C19^2+IF(AND(B6=500,B7=3000),96.87,0)+IF(C19<=1.25,23.62,0))"
+    },
+    "A22": {
+      "value": "Glasfactor",
+      "formula": null
+    },
+    "B22": {
+      "value": "keuze glas",
+      "formula": null
+    },
+    "C22": {
+      "value": "1.5625",
+      "formula": "IF(B9=\"PVC dubbel\",1.25,IF(B9=\"PVC driedubbel\",1.5625,IF(B9=\"Alu dubbel\",3.125,IF(B9=\"Alu driedubbel\",3.4375,4.296875))))"
+    },
+    "A23": {
+      "value": "Kleurfactor",
+      "formula": null
+    },
+    "B23": {
+      "value": "keuze kleur en m²",
+      "formula": null
+    },
+    "C23": {
+      "value": "1",
+      "formula": "IF(B10=\"Kleur 1 kant\",IF(C19<3.5,1.1,1.05),IF(B10=\"Kleur 2 kanten\",IF(C19<3.5,1.25,1.1),1))"
+    },
+    "A24": {
+      "value": "Openingsfactor",
+      "formula": null
+    },
+    "B24": {
+      "value": "draai/kiep: 2,00 tot 1 m², anders 1,40",
+      "formula": null
+    },
+    "C24": {
+      "value": "1.4",
+      "formula": "IF(B11=\"Draai/kiep\",IF(C19<=1,2,1.4),1)"
+    },
+    "A25": {
+      "value": "Rolluik/zonnewering",
+      "formula": null
+    },
+    "B25": {
+      "value": "breedte in m × € 350",
+      "formula": null
+    },
+    "C25": {
+      "value": "0",
+      "formula": "IF(B12=\"Geen\",0,B6/1000*350)"
+    },
+    "A26": {
+      "value": "Elementprijs excl. BTW",
+      "formula": null
+    },
+    "B26": {
+      "value": "oude prijsformule → basiskost → 35% marge",
+      "formula": null
+    },
+    "C26": {
+      "value": "462.11931186093744",
+      "formula": "(((C21*C22*1.1*C23*C24)+C25)*0.95*(0.75/1.35)*1.35)*B8"
+    },
+    "A27": {
+      "value": "Gewicht",
+      "formula": null
+    },
+    "B27": {
+      "value": "glas + profiel",
+      "formula": null
+    },
+    "C27": {
+      "value": "84.771999999999991",
+      "formula": "(((B6-130)/1000)*((B7-130)/1000)*IF(B9=\"PVC driedubbel\",30,20)+((2*B6+2*B7)/1000)*IF(B9=\"PVC driedubbel\",8,6))*B8"
+    },
+    "A28": {
+      "value": "Afbraak",
+      "formula": null
+    },
+    "B28": {
+      "value": "gewichtsklasse × aantal",
+      "formula": null
+    },
+    "C28": {
+      "value": "80",
+      "formula": "IF(C27/B8<=100,80,IF(C27/B8<=150,100,IF(C27/B8<=200,110,IF(C27/B8<=300,170,IF(C27/B8<=400,320,400)))))*B8"
+    },
+    "A29": {
+      "value": "Recyclage",
+      "formula": null
+    },
+    "B29": {
+      "value": "gewicht × aantal / 1.000 × € 350",
+      "formula": null
+    },
+    "C29": {
+      "value": "29.670199999999994",
+      "formula": "C27/1000*350"
+    },
+    "A30": {
+      "value": "Plaatsing",
+      "formula": null
+    },
+    "B30": {
+      "value": "gewichtsklasse raam × aantal",
+      "formula": null
+    },
+    "C30": {
+      "value": "175",
+      "formula": "IF(C27/B8<=100,175,IF(C27/B8<=150,220,IF(C27/B8<=200,250,IF(C27/B8<=300,370,480))))*B8"
+    },
+    "A31": {
+      "value": "Siliconeren",
+      "formula": null
+    },
+    "B31": {
+      "value": "omtrek × aantal × € 7",
+      "formula": null
+    },
+    "C31": {
+      "value": "37.1",
+      "formula": "C20*B8*7"
+    },
+    "A32": {
+      "value": "Afwerking",
+      "formula": null
+    },
+    "B32": {
+      "value": "forfait volgens keuze en m²-klasse × aantal",
+      "formula": null
+    },
+    "C32": {
+      "value": "230",
+      "formula": "IF(B13=\"MDF\",IF(C19<=5,230,IF(C19<=10,350,470)),IF(B13=\"PVC\",IF(C19<=2.5,250,IF(C19<=5,360,IF(C19<=10,470,660))),IF(B13=\"Pleister\",IF(C19<=2.5,300,IF(C19<=5,450,600)),0)))*B8"
+    },
+    "A33": {
+      "value": "Totaal excl. BTW",
+      "formula": null
+    },
+    "B33": {
+      "value": "som alle posten",
+      "formula": null
+    },
+    "C33": {
+      "value": "1013.8895118609374",
+      "formula": "SUM(C26,C28:C32)"
+    },
+    "A34": {
+      "value": "BTW",
+      "formula": null
+    },
+    "B34": {
+      "value": "totaal excl. BTW × BTW-tarief",
+      "formula": null
+    },
+    "C34": {
+      "value": "60.833370711656244",
+      "formula": "C33*B14"
+    },
+    "A35": {
+      "value": "Totaal incl. BTW",
+      "formula": null
+    },
+    "B35": {
+      "value": "totaal excl. BTW + BTW",
+      "formula": null
+    },
+    "C35": {
+      "value": "1074.7228825725938",
+      "formula": "C33+C34"
+    }
+  }
+}

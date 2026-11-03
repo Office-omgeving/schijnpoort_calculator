@@ -1,0 +1,1 @@
+window.QUOTE_BUILDER_CONFIG=Object.freeze({"siteUrl": "https://schijnpoort-calculator-review.development802324.chatgpt.site", "environment": "standalone", "forcedMeasurementMode": "simple", "showPricesImmediately": true, "siteTitle": "Schijnpoort | Bereken jouw richtprijs", "carpentryMarginRate": 0.35});

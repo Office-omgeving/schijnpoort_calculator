@@ -1,0 +1,13 @@
+{
+  "name": "schijnpoort-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zelfstandige Schijnpoort-calculator voor gebruik na leadformulieren.",
+  "scripts": {
+    "test": "node tests/pricing.mjs",
+    "check": "node --check script.js && node --check config.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

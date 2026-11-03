@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Offertebouwer | Ramen, deuren en poorten</title>
+<link href="styles.css?v=20260928-tax-summary" rel="stylesheet"/>
+<meta content="noindex,nofollow" name="robots"/><link href="standalone.css?v=20261103-result-actions" rel="stylesheet"/></head>
+<body>
+<div class="page">
+<div class="wizard-progress-shell">
+<div aria-label="Stappen" class="wizard-progress" id="wizard-progress"></div>
+</div>
+<main class="layout wizard-layout">
+<section class="panel wizard-step" data-step-key="personal" id="step-personal">
+<div class="panel-header">
+<div>
+<p class="eyebrow">Woning</p>
+<h2 data-simple-title="Vertel ons over je woning">Vertel ons over je woning</h2>
+</div>
+</div>
+<form class="grid" id="client-form"><p class="meta">Deze gegevens worden alleen gebruikt voor je prijsindicatie. Het btw-tarief moet bij de definitieve offerte bevestigd worden.</p>
+<label class="field" hidden="">
+<span class="required">Naam contactpersoon</span>
+<input disabled="" id="client-name" name="clientName" placeholder="Voornaam Naam"/>
+</label>
+<label class="field" hidden="">
+<span class="required">E-mail</span>
+<input disabled="" id="client-email" name="clientEmail" placeholder="naam@email.com" type="email"/>
+</label>
+<label class="field" hidden="">
+<span class="required">Telefoon</span>
+<input disabled="" id="client-phone" name="clientPhone" placeholder="0470 00 00 00"/>
+</label>
+<label class="field" hidden="">
+<span class="required">Plaats</span>
+<input disabled="" id="client-city" name="clientCity" placeholder="Gemeente / Stad"/>
+</label>
+<label class="field" hidden="">
+<span>Straat + huisnummer</span>
+<input disabled="" id="client-address" name="clientAddress" placeholder="Bijv. Kerkstraat 12"/>
+</label>
+<label class="field" hidden="">
+<span>Postcode</span>
+<input disabled="" id="client-postal" name="clientPostal" placeholder="Bijv. 9000"/>
+</label>
+<div class="personal-housing-fields">
+<div class="field field-choice-blocks">
+<h2 class="field-question-title">Hoe oud is jouw woning?</h2>
+<select aria-hidden="true" class="hidden" id="client-old-house" name="clientOldHouse" tabindex="-1">
+<option value=""></option>
+<option value="false">Nee, jonger dan 10 jaar (21% BTW)</option>
+<option value="true">Ja, ouder dan 10 jaar (6% BTW)</option>
+</select>
+<div class="project-choice-grid housing-choice-grid">
+<label class="project-choice-card">
+<input name="housing-old-house" type="radio" value="true"/>
+<span class="project-choice-title">Ouder dan 10 jaar</span>
+<span class="project-choice-meta">Prijs berekend met 6% BTW</span>
+</label>
+<label class="project-choice-card">
+<input name="housing-old-house" type="radio" value="false"/>
+<span class="project-choice-title">Jonger dan 10 jaar</span>
+<span class="project-choice-meta">Prijs berekend met 21% BTW</span>
+</label>
+</div>
+</div>
+<div class="field field-choice-blocks">
+<h2 class="field-question-title">Type woning</h2>
+<select aria-hidden="true" class="hidden" id="client-building" name="clientBuilding" tabindex="-1">
+<option value=""></option>
+<option value="open-bebouwing">Open bebouwing</option>
+<option value="halfopen-bebouwing">Halfopen bebouwing</option>
+<option value="gesloten-bebouwing">Gesloten bebouwing</option>
+<option value="appartement">Appartement</option>
+</select>
+<div class="project-choice-grid housing-choice-grid">
+<label class="project-choice-card">
+<input name="housing-building" type="radio" value="open-bebouwing"/>
+<span class="project-choice-title">Open bebouwing</span>
+</label>
+<label class="project-choice-card">
+<input name="housing-building" type="radio" value="halfopen-bebouwing"/>
+<span class="project-choice-title">Halfopen bebouwing</span>
+</label>
+<label class="project-choice-card">
+<input name="housing-building" type="radio" value="gesloten-bebouwing"/>
+<span class="project-choice-title">Gesloten bebouwing</span>
+</label>
+<label class="project-choice-card">
+<input name="housing-building" type="radio" value="appartement"/>
+<span class="project-choice-title">Appartement</span>
+</label>
+</div>
+</div>
+</div>
+<details class="support-fields" hidden="" id="support-fields">
+<summary>
+<p class="eyebrow">Woning</p>
+<h3>Optioneel: premie of lening inschatten</h3>
+<p class="support-fields-intro">Vul je inkomen en gezinssituatie in als je wil weten of je mogelijk in aanmerking komt voor een subsidie of lening.</p>
+</summary>
+<div class="support-fields-body">
+<label class="field">
+<span>Premie meerekenen?</span>
+<select disabled="" id="support-premium">
+<option value="true">Ja</option>
+<option value="false">Nee</option>
+</select>
+</label>
+<label class="field">
+<span>Lening meerekenen?</span>
+<select disabled="" id="support-loan">
+<option value="true">Ja</option>
+<option value="false">Nee</option>
+</select>
+</label>
+<label class="field support-optional-field">
+<span>Gezinssituatie</span>
+<select disabled="" id="support-household">
+<option value="single">Alleenstaande</option>
+<option value="couple">Koppel / meerdere eigenaar-bewoners</option>
+</select>
+</label>
+<label class="field support-optional-field">
+<span>Personen ten laste</span>
+<input disabled="" id="support-dependents" min="0" step="1" type="number" value="0"/>
+</label>
+<label class="field support-income-field support-optional-field">
+<span>Gezamenlijk belastbaar inkomen</span>
+<input disabled="" id="support-income" min="0" placeholder="Volgens laatste aanslagbiljet" step="100" type="number" value="0"/>
+</label>
+<label class="field">
+<span>Eigenaar-bewoner?</span>
+<select disabled="" id="support-owner-occupant">
+<option value="true">Ja</option>
+<option value="false">Nee</option>
+</select>
+</label>
+<label class="field">
+<span>Gedomicilieerd of binnen 36 maanden?</span>
+<select disabled="" id="support-domiciled">
+<option value="true">Ja</option>
+<option value="false">Nee</option>
+</select>
+</label>
+<label class="field">
+<span>Andere woning of bouwgrond volledig in volle eigendom?</span>
+<select disabled="" id="support-other-property">
+<option value="false">Nee</option>
+<option value="true">Ja</option>
+</select>
+</label>
+<label class="field">
+<span>Woning ligt in het Vlaams Gewest?</span>
+<select disabled="" id="support-flemish-region">
+<option value="true">Ja</option>
+<option value="false">Nee</option>
+</select>
+</label>
+<label class="field">
+<span>Aangesloten / ingebruikname voor 1 januari 2006?</span>
+<select disabled="" id="support-before-2006">
+<option value="true">Ja</option>
+<option value="false">Nee</option>
+</select>
+</label>
+<label class="field">
+<span>Gewenste looptijd lening</span>
+<select disabled="" id="support-loan-years">
+<option value="25">25 jaar</option>
+<option value="20">20 jaar</option>
+<option value="15">15 jaar</option>
+<option value="10">10 jaar</option>
+</select>
+</label>
+</div>
+</details>
+<label class="newsletter-consent-option newsletter-consent-personal" hidden="">
+<input data-newsletter-consent="" disabled="" type="checkbox"/>
+<span><strong>Ik wil de nieuwsbrief van Schijnpoort ontvangen</strong><small>Ontvang inspiratie, nieuws en handige tips per e-mail. Uitschrijven kan altijd.</small></span>
+</label>
+<p class="terms-notice" hidden="">
+            Door op "<span id="terms-action-label">prijs berekenen</span>" te drukken ben je akkoord met onze
+            <a href="https://www.schijnpoort.be/algemene-verkoopsvoorwaarden" rel="noopener noreferrer" target="_blank">algemene voorwaarden</a>
+            en
+            <a href="https://schijnpoort.be/privacy-policy" rel="noopener noreferrer" target="_blank">privacy policy</a>.
+          </p>
+</form>
+</section>
+<section class="panel wizard-step" data-step-key="projects" id="step-projects">
+<div class="panel-header">
+<div>
+<p class="eyebrow">Stap 2</p>
+<h2>Welke werken wil je opnemen?</h2>
+</div>
+</div>
+<div class="project-choice-grid">
+<label class="project-choice-card">
+<input id="module-items" type="checkbox"/>
+<span class="project-choice-title">Ramen, deuren en poorten</span>
+<span class="project-choice-meta">Elementen met montage, afwerking en extra's</span>
+</label>
+<label class="project-choice-card">
+<input id="module-facade" type="checkbox"/>
+<span class="project-choice-title">Gevelrenovatie</span>
+<span class="project-choice-meta">Gevelisolatie, openingen en gevel-extra's</span>
+</label>
+<label class="project-choice-card">
+<input id="module-roof" type="checkbox"/>
+<span class="project-choice-title">Dakwerken</span>
+<span class="project-choice-meta">Platte en hellende daken met dak-extra's</span>
+</label>
+<label class="project-choice-card">
+<input id="module-support" type="checkbox"/>
+<span class="project-choice-title">Mijn VerbouwPremie &amp; Mijn VerbouwLening</span>
+<span class="project-choice-meta">Indicatieve premie, lening en maandlast</span>
+</label>
+</div>
+<input id="client-scope" type="hidden" value="ramen"/>
+</section>
+<section class="panel wizard-step" data-step-key="simple_vat" id="simple-vat-panel">
+<div class="panel-header">
+<div>
+<p class="eyebrow">Woonst</p>
+<h2 data-simple-title="Hoe oud is jouw woning?">Hoe oud is jouw woning?</h2>
+</div>
+</div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card">
+<input name="simple-old-house" type="radio" value="true"/>
+<span class="project-choice-title">Ouder dan 10 jaar</span>
+<span class="choice-benefits">Richtprijs met 6% btw</span>
+</label>
+<label class="project-choice-card">
+<input name="simple-old-house" type="radio" value="false"/>
+<span class="project-choice-title">Jonger dan 10 jaar</span>
+<span class="choice-benefits">Richtprijs met 21% btw</span>
+</label>
+<label class="project-choice-card">
+<input name="simple-old-house" type="radio" value="unknown"/>
+<span class="project-choice-title">Ik weet het niet</span>
+<span class="project-choice-meta">We gaan voorlopig uit van 21% btw en passen dit later aan indien nodig.</span>
+</label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_building" id="simple-building-panel">
+<div class="panel-header">
+<div>
+<p class="eyebrow">Woonst</p>
+<h2 data-simple-title="Welk type woning is het?">Welk type woning is het?</h2>
+</div>
+</div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-building" type="radio" value="appartement"/><span class="project-choice-title">Appartement</span></label>
+<label class="project-choice-card"><input name="simple-building" type="radio" value="gesloten-bebouwing"/><span class="project-choice-title">Gesloten bebouwing</span></label>
+<label class="project-choice-card"><input name="simple-building" type="radio" value="halfopen-bebouwing"/><span class="project-choice-title">Halfopen bebouwing</span></label>
+<label class="project-choice-card"><input name="simple-building" type="radio" value="open-bebouwing"/><span class="project-choice-title">Open bebouwing</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_items_count" id="simple-items-count-panel">
+<div class="panel-header"><div><p class="eyebrow">Ramen en deuren</p><h2 data-simple-title="Welke ramen en deuren heb je nodig?">Welke ramen en deuren heb je nodig?</h2></div></div>
+<div aria-label="Aantallen ramen en deuren" class="simple-element-grid">
+<article class="simple-element-card" data-simple-element-card="fixed-window">
+<img alt="Vast raam" src="assets/window-door-elements/fixed-window.png"/>
+<div class="simple-element-copy">
+<strong>Vast raam</strong>
+<span>Vast raam zonder opening</span>
+</div>
+<div class="simple-stepper">
+<button aria-label="Vast raam verminderen" data-simple-element-minus="fixed-window" type="button">−</button>
+<input id="simple-element-fixed-window" inputmode="numeric" min="0" name="simple-element-fixed-window" step="1" type="number" value="0"/>
+<button aria-label="Vast raam verhogen" data-simple-element-plus="fixed-window" type="button">+</button>
+</div>
+</article>
+<article class="simple-element-card" data-simple-element-card="single-window">
+<img alt="Draai/kiep raam" src="assets/window-door-elements/single-window.png"/>
+<div class="simple-element-copy">
+<strong>Draai/kiep raam</strong>
+<span>Standaard draai/kiep raam</span>
+</div>
+<div class="simple-stepper">
+<button aria-label="Draai/kiep raam verminderen" data-simple-element-minus="single-window" type="button">−</button>
+<input id="simple-element-single-window" inputmode="numeric" min="0" name="simple-element-single-window" step="1" type="number" value="0"/>
+<button aria-label="Draai/kiep raam verhogen" data-simple-element-plus="single-window" type="button">+</button>
+</div>
+</article>
+<article class="simple-element-card" data-simple-element-card="double-window">
+<img alt="Dubbel raam" src="assets/window-door-elements/double-window.png"/>
+<div class="simple-element-copy">
+<strong>Dubbel raam</strong>
+<span>Twee delen naast elkaar</span>
+</div>
+<div class="simple-stepper">
+<button aria-label="Dubbel raam verminderen" data-simple-element-minus="double-window" type="button">−</button>
+<input id="simple-element-double-window" inputmode="numeric" min="0" name="simple-element-double-window" step="1" type="number" value="0"/>
+<button aria-label="Dubbel raam verhogen" data-simple-element-plus="double-window" type="button">+</button>
+</div>
+</article>
+<article class="simple-element-card" data-simple-element-card="triple-window">
+<img alt="Drievoudig raam" src="assets/window-door-elements/triple-window.png"/>
+<div class="simple-element-copy">
+<strong>Drievoudig raam</strong>
+<span>Drie delen naast elkaar</span>
+</div>
+<div class="simple-stepper">
+<button aria-label="Drievoudig raam verminderen" data-simple-element-minus="triple-window" type="button">−</button>
+<input id="simple-element-triple-window" inputmode="numeric" min="0" name="simple-element-triple-window" step="1" type="number" value="0"/>
+<button aria-label="Drievoudig raam verhogen" data-simple-element-plus="triple-window" type="button">+</button>
+</div>
+</article>
+<article class="simple-element-card" data-simple-element-card="single-door">
+<img alt="Deur" src="assets/window-door-elements/single-door.png"/>
+<div class="simple-element-copy">
+<strong>Deur</strong>
+<span>Standaard buitendeur</span>
+</div>
+<div class="simple-stepper">
+<button aria-label="Deur verminderen" data-simple-element-minus="single-door" type="button">−</button>
+<input id="simple-element-single-door" inputmode="numeric" min="0" name="simple-element-single-door" step="1" type="number" value="0"/>
+<button aria-label="Deur verhogen" data-simple-element-plus="single-door" type="button">+</button>
+</div>
+</article>
+<article class="simple-element-card" data-simple-element-card="door-with-sidelight">
+<img alt="Deur met zijlicht" src="assets/window-door-elements/door-with-sidelight.png"/>
+<div class="simple-element-copy">
+<strong>Deur met zijlicht</strong>
+<span>Buitendeur met vast glasdeel</span>
+</div>
+<div class="simple-stepper">
+<button aria-label="Deur met zijlicht verminderen" data-simple-element-minus="door-with-sidelight" type="button">−</button>
+<input id="simple-element-door-with-sidelight" inputmode="numeric" min="0" name="simple-element-door-with-sidelight" step="1" type="number" value="0"/>
+<button aria-label="Deur met zijlicht verhogen" data-simple-element-plus="door-with-sidelight" type="button">+</button>
+</div>
+</article>
+<article class="simple-element-card" data-simple-element-card="sliding-window">
+<img alt="Schuifraam" src="assets/window-door-elements/sliding-window.png"/>
+<div class="simple-element-copy">
+<strong>Schuifraam</strong>
+<span>Schuifraam in PVC</span>
+</div>
+<div class="simple-stepper">
+<button aria-label="Schuifraam verminderen" data-simple-element-minus="sliding-window" type="button">−</button>
+<input id="simple-element-sliding-window" inputmode="numeric" min="0" name="simple-element-sliding-window" step="1" type="number" value="0"/>
+<button aria-label="Schuifraam verhogen" data-simple-element-plus="sliding-window" type="button">+</button>
+</div>
+</article>
+<article class="simple-element-card" data-simple-element-card="garage-door">
+<img alt="Garagepoort" src="assets/window-door-elements/garage-door.png"/>
+<div class="simple-element-copy">
+<strong>Garagepoort</strong>
+<span>Sectionale garagepoort</span>
+</div>
+<div class="simple-stepper">
+<button aria-label="Garagepoort verminderen" data-simple-element-minus="garage-door" type="button">−</button>
+<input id="simple-element-garage-door" inputmode="numeric" min="0" name="simple-element-garage-door" step="1" type="number" value="0"/>
+<button aria-label="Garagepoort verhogen" data-simple-element-plus="garage-door" type="button">+</button>
+</div>
+</article>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_items_material" id="simple-items-material-panel">
+<div class="panel-header"><div><p class="eyebrow">Elementen</p><h2 data-simple-title="Welk materiaal?">Welk materiaal?</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-items-material" type="radio" value="pvc"/><span class="project-choice-title">PVC</span></label>
+<label class="project-choice-card"><input name="simple-items-material" type="radio" value="alu"/><span class="project-choice-title">Aluminium</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_items_glass" id="simple-items-glass-panel">
+<div class="panel-header"><div><p class="eyebrow">Elementen</p><h2 data-simple-title="Welk glas?">Welk glas?</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-items-glass" type="radio" value="double"/><span class="project-choice-title">Dubbel glas</span></label>
+<label class="project-choice-card"><input name="simple-items-glass" type="radio" value="triple"/><span class="project-choice-title">Driedubbel glas</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_items_finishing" id="simple-items-finishing-panel">
+<div class="panel-header"><div><p class="eyebrow">Elementen</p><h2 data-simple-title="Welke binnenafwerking?">Welke binnenafwerking?</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-items-finishing" type="radio" value="pvc"/><span class="project-choice-title">PVC</span></label>
+<label class="project-choice-card"><input name="simple-items-finishing" type="radio" value="mdf"/><span class="project-choice-title">MDF</span></label>
+<label class="project-choice-card"><input name="simple-items-finishing" type="radio" value="pleister"/><span class="project-choice-title">Pleister</span></label>
+<label class="project-choice-card"><input name="simple-items-finishing" type="radio" value="none"/><span class="project-choice-title">Geen</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_facade_count" id="simple-facade-count-panel">
+<div class="panel-header"><div><p class="eyebrow">Gevelrenovatie</p><h2 data-simple-title="Hoeveel m2 gevel?">Hoeveel m2 gevel?</h2></div></div>
+<div class="simple-slider-card">
+<div class="simple-slider-readout">
+<span>Geschatte geveloppervlakte</span>
+<strong id="simple-facade-count-value">60 m2</strong>
+<small id="simple-facade-count-hint">Middelgrote woning</small>
+</div>
+<input id="simple-facade-count" max="220" min="20" name="simple-facade-count" step="10" type="range" value="60"/>
+<div aria-hidden="true" class="simple-slider-scale">
+<span>Kleine woning</span>
+<span>Middelgrote woning</span>
+<span>Grote woning</span>
+</div>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_facade_area" id="simple-facade-area-panel">
+<div class="panel-header"><div><p class="eyebrow">Gevelrenovatie</p><h2 data-simple-title="Gemiddeld oppervlak per gevel">Gemiddeld oppervlak per gevel</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-facade-area" type="radio" value="lt40"/><span class="project-choice-title">&lt; 40 m2</span><span class="project-choice-meta">Standaard rijwoning, ongeveer 4 meter breed met 2 verdiepingen.</span></label>
+<label class="project-choice-card"><input name="simple-facade-area" type="radio" value="40-80"/><span class="project-choice-title">40-80 m2</span><span class="project-choice-meta">Bredere rijwoning of halfopen woning met normale gevelhoogte.</span></label>
+<label class="project-choice-card"><input name="simple-facade-area" type="radio" value="80-120"/><span class="project-choice-title">80-120 m2</span><span class="project-choice-meta">Grotere halfopen of open bebouwing met brede of meerdere hoge gevels.</span></label>
+<label class="project-choice-card"><input name="simple-facade-area" type="radio" value="gt120"/><span class="project-choice-title">&gt; 120 m2</span><span class="project-choice-meta">Zeer grote gevelvlakken, grote open bebouwing of meerdere hoge gevels.</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_facade_insulation" id="simple-facade-insulation-panel">
+<div class="panel-header"><div><p class="eyebrow">Gevelrenovatie</p><h2 data-simple-title="Wil je gevelisolatie?">Wil je gevelisolatie?</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-facade-insulation" type="radio" value="yes"/><span class="project-choice-title">Ja</span></label>
+<label class="project-choice-card"><input name="simple-facade-insulation" type="radio" value="no"/><span class="project-choice-title">Nee</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_facade_finish" id="simple-facade-finish-panel">
+<div class="panel-header"><div><p class="eyebrow">Gevelrenovatie</p><h2 data-simple-title="Welke gevelafwerking?">Welke gevelafwerking?</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-facade-finish" type="radio" value="crepi"/><span class="project-choice-title">Crepi</span></label>
+<label class="project-choice-card"><input name="simple-facade-finish" type="radio" value="trespa"/><span class="project-choice-title">Houten gevelbekleding / Trespa</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_roof_flat_count" id="simple-roof-flat-count-panel">
+<div class="panel-header"><div><p class="eyebrow">Dakwerken</p><h2 data-simple-title="Hoeveel platte daken?">Hoeveel platte daken?</h2></div></div>
+<div class="project-choice-grid simple-number-grid">
+<label class="project-choice-card"><input name="simple-roof-flat-count" type="radio" value="0"/><span class="project-choice-title">Geen platte daken</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-count" type="radio" value="1"/><span class="project-choice-title">1 plat dak</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-count" type="radio" value="2"/><span class="project-choice-title">2 platte daken</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-count" type="radio" value="3"/><span class="project-choice-title">3 platte daken</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-count" type="radio" value="4"/><span class="project-choice-title">4 platte daken</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-count" type="radio" value="5+"/><span class="project-choice-title">Meer dan 4 platte daken</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_roof_count" id="simple-roof-count-panel">
+<div class="panel-header"><div><p class="eyebrow">Dakwerken</p><h2 data-simple-title="Hoeveel m2 dak?">Hoeveel m2 dak?</h2></div></div>
+<div class="simple-slider-card">
+<div class="simple-slider-readout">
+<span>Geschatte dakoppervlakte</span>
+<strong id="simple-roof-count-value">60 m2</strong>
+<small id="simple-roof-count-hint">Middelgrote woning</small>
+</div>
+<input id="simple-roof-count" max="220" min="20" name="simple-roof-count" step="10" type="range" value="60"/>
+<div aria-hidden="true" class="simple-slider-scale">
+<span>Kleine woning</span>
+<span>Middelgrote woning</span>
+<span>Grote woning</span>
+</div>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_roof_flat_area" id="simple-roof-flat-area-panel">
+<div class="panel-header"><div><p class="eyebrow">Dakwerken</p><h2 data-simple-title="Gemiddeld oppervlak per plat dak">Gemiddeld oppervlak per plat dak</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-roof-flat-area" type="radio" value="lt40"/><span class="project-choice-title">&lt; 40 m2</span><span class="project-choice-meta">Klein plat dak, aanbouw, garage of compact dakvlak.</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-area" type="radio" value="40-80"/><span class="project-choice-title">40-80 m2</span><span class="project-choice-meta">Gemiddeld plat dak van een rijwoning of aanbouw.</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-area" type="radio" value="80-120"/><span class="project-choice-title">80-120 m2</span><span class="project-choice-meta">Groter plat dak van een halfopen of open bebouwing.</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-area" type="radio" value="gt120"/><span class="project-choice-title">&gt; 120 m2</span><span class="project-choice-meta">Zeer groot plat dak of meerdere platte dakdelen samen.</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_roof_sloped_area" id="simple-roof-sloped-area-panel">
+<div class="panel-header"><div><p class="eyebrow">Dakwerken</p><h2 data-simple-title="Gemiddeld oppervlak per hellend dak">Gemiddeld oppervlak per hellend dak</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-roof-sloped-area" type="radio" value="lt40"/><span class="project-choice-title">&lt; 40 m2</span><span class="project-choice-meta">Klein hellend dakvlak, kleine rijwoning of beperkte dakzijde.</span></label>
+<label class="project-choice-card"><input name="simple-roof-sloped-area" type="radio" value="40-80"/><span class="project-choice-title">40-80 m2</span><span class="project-choice-meta">Gemiddeld hellend dak van een rijwoning of kleinere halfopen woning.</span></label>
+<label class="project-choice-card"><input name="simple-roof-sloped-area" type="radio" value="80-120"/><span class="project-choice-title">80-120 m2</span><span class="project-choice-meta">Groter hellend dak van een halfopen of open bebouwing.</span></label>
+<label class="project-choice-card"><input name="simple-roof-sloped-area" type="radio" value="gt120"/><span class="project-choice-title">&gt; 120 m2</span><span class="project-choice-meta">Zeer groot hellend dak of meerdere dakvlakken samen.</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_roof_flat_material" id="simple-roof-flat-material-panel">
+<div class="panel-header"><div><p class="eyebrow">Dakwerken</p><h2 data-simple-title="Welke afwerking voor het platte dak?">Welke afwerking voor het platte dak?</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-roof-flat-material" type="radio" value="epdm"/><span class="project-choice-title">EPDM</span></label>
+<label class="project-choice-card"><input name="simple-roof-flat-material" type="radio" value="roofing"/><span class="project-choice-title">Roofing</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="simple_roof_insulation" id="simple-roof-insulation-panel">
+<div class="panel-header"><div><p class="eyebrow">Dakwerken</p><h2 data-simple-title="Wil je dakisolatie?">Wil je dakisolatie?</h2></div></div>
+<div class="project-choice-grid simple-choice-grid">
+<label class="project-choice-card"><input name="simple-roof-insulation" type="radio" value="yes"/><span class="project-choice-title">Ja</span></label>
+<label class="project-choice-card"><input name="simple-roof-insulation" type="radio" value="no"/><span class="project-choice-title">Nee</span></label>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="elements" id="items-panel">
+<div class="panel-header">
+<div>
+<p class="eyebrow">Ramen en deuren</p>
+<h2>Voeg ramen, deuren of poorten toe</h2>
+</div>
+<button class="ghost-button" id="reset-quote" type="button">Leeg maken</button>
+</div>
+<form class="item-form" id="item-form">
+<label class="field area-type">
+<span>Type</span>
+<select id="item-type" required="">
+<option value="raam">Raam</option>
+<option value="schuifraam">Schuifraam</option>
+<option value="deur">Deur</option>
+<option value="deur-zijlicht">Deur + zijlicht</option>
+<option value="deur-element">Deur + koppeling</option>
+<option value="deur-dubbel">Dubbele deur</option>
+<option value="poort">Poort</option>
+</select>
+</label>
+<label class="field area-glass">
+<span>Soort</span>
+<select id="item-glass" required="">
+<option value="pvc_double">PVC Isolatie (dubbelglas)</option>
+<option value="pvc_triple">PVC Hoogrendement (driedubbelglas)</option>
+<option value="alu_double">Aluminium Isolatie (dubbelglas)</option>
+<option value="alu_triple">Aluminium Hoogrendement (driedubbelglas)</option>
+<option value="alu_passive">Aluminium Passief (energieneutraal)</option>
+<option value="panel">Geïsoleerd paneel</option>
+</select>
+</label>
+<label class="field area-width">
+<span>Breedte (mm)</span>
+<input aria-describedby="item-dimension-hint" id="item-width" min="350" placeholder="bv. 1200" required="" step="1" type="number"/>
+</label>
+<label class="field area-height">
+<span>Hoogte (mm)</span>
+<input aria-describedby="item-dimension-hint" id="item-height" min="350" placeholder="bv. 1500" required="" step="1" type="number"/>
+</label>
+<p aria-live="polite" class="item-dimension-hint" id="item-dimension-hint">Vul afmetingen in millimeters in. Minimum: 350 mm breed en 350 mm hoog.</p>
+<label class="field area-finishing">
+<span>Afwerking</span>
+<select id="item-finishing" required="">
+<option value="none">Geen</option>
+<option value="mdf">MDF</option>
+<option value="pleister">Pleister</option>
+<option value="pvc">PVC</option>
+</select>
+</label>
+<label class="field area-color">
+<span>Kleur</span>
+<select id="item-color" required="">
+<option value="standard">Standaard kleur</option>
+<option value="single">Te kiezen kleur (1 kant)</option>
+<option value="double">Te kiezen kleur (2 kanten)</option>
+</select>
+</label>
+<label class="field area-opening">
+<span>Draai / kiep</span>
+<select id="item-opening">
+<option value="vast">Vast</option>
+<option value="draaikiep">Draai/kiep</option>
+</select>
+</label>
+<label class="field area-shutter">
+<span>Rolluik / zonnewering</span>
+<select id="item-shutter" required="">
+<option value="none">Geen</option>
+<option value="rolluik">Rolluik</option>
+<option value="zonnewering">Zonnewering</option>
+</select>
+</label>
+<div class="actions area-actions">
+<button class="primary" type="submit">Element toevoegen</button>
+</div>
+<div class="item-draft-total">
+<span>Totaal huidig element (incl. BTW)</span>
+<strong id="item-draft-total-value">€ 0,00</strong>
+<small id="item-draft-total-note"></small>
+</div>
+</form>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Kleur</th>
+<th>Afwerking</th>
+<th>Opties</th>
+<th>Afmetingen</th>
+<th>Aantal</th>
+<th>Totaal incl.</th>
+<th></th>
+</tr>
+</thead>
+<tbody id="items-body">
+<tr class="empty-row">
+<td colspan="8">Nog geen elementen toegevoegd</td>
+</tr>
+</tbody>
+</table>
+</div>
+<details class="panel-step-total item-price-breakdown" id="items-price-breakdown">
+<summary>
+<span>Totaal elementen (incl. BTW)</span>
+<strong id="items-step-total">€ 0,00</strong>
+<small id="items-step-total-note"></small>
+</summary>
+<div class="item-price-breakdown-body" id="items-step-breakdown"></div>
+</details>
+</section>
+<section class="panel wizard-step" data-step-key="facade" id="facade-panel">
+<div class="panel-header">
+<div>
+<p class="eyebrow">Gevelrenovatie</p>
+<h2>Gevelrenovatie met isolatie</h2>
+</div>
+<button class="ghost-button" id="reset-facade" type="button">Leeg maken</button>
+</div>
+<form class="facade-form" id="facade-form">
+<label class="field facade-finish">
+<span>Afwerking</span>
+<select id="facade-finish" required="">
+<option value="crepi">Crepi (sierpleister)</option>
+<option value="steenstrips">Steenstrips</option>
+</select>
+</label>
+<label class="field facade-insulation">
+<span>Isolatie (cm)</span>
+<select id="facade-insulation" required="">
+<option value="10">10 cm</option>
+<option value="12">12 cm</option>
+<option value="14">14 cm</option>
+</select>
+</label>
+<label class="field facade-width">
+<span>Breedte (cm)</span>
+<input id="facade-width" min="10" placeholder="Breedte in cm" required="" step="1" type="number"/>
+</label>
+<label class="field facade-height">
+<span>Hoogte (cm)</span>
+<input id="facade-height" min="10" placeholder="Hoogte in cm" required="" step="1" type="number"/>
+</label>
+<p class="facade-simple-note">Wil je een meer gedetailleerde berekening? Voeg dan openingen toe in de juiste gevel.</p>
+<details class="facade-optional-block facade-openings-wrap">
+<summary>Openingen per gevel (optioneel)</summary>
+<div class="facade-openings-config">
+<div class="facade-config-block">
+<p class="label">Koppel bestaand element</p>
+<div class="facade-config-grid">
+<label class="field">
+<span>Element</span>
+<select id="facade-element-select">
+<option value="">Kies element</option>
+</select>
+</label>
+<label class="field">
+<span>Aantal</span>
+<input id="facade-element-qty" min="1" step="1" type="number" value="1"/>
+</label>
+<label class="field">
+<span>Raamdorpel</span>
+<select id="facade-element-sills">
+<option value="none">Geen</option>
+<option value="aluminium">Aluminium</option>
+<option value="blauwe-hardsteen">Blauwe hardsteen</option>
+</select>
+</label>
+</div>
+<div class="actions facade-config-actions">
+<button class="primary" id="facade-add-linked-opening" type="button">Koppelen</button>
+</div>
+</div>
+<div class="facade-config-block">
+<p class="label">Koppel extra element</p>
+<div class="facade-config-grid">
+<label class="field">
+<span>Breedte (cm)</span>
+<input id="facade-opening-width" min="10" placeholder="Breedte in cm" step="1" type="number"/>
+</label>
+<label class="field">
+<span>Hoogte (cm)</span>
+<input id="facade-opening-height" min="10" placeholder="Hoogte in cm" step="1" type="number"/>
+</label>
+<label class="field">
+<span>Raamdorpel</span>
+<select id="facade-custom-sills">
+<option value="none">Geen</option>
+<option value="aluminium">Aluminium</option>
+<option value="blauwe-hardsteen">Blauwe hardsteen</option>
+</select>
+</label>
+</div>
+<div class="actions facade-config-actions">
+<button class="primary" id="facade-add-custom-opening" type="button">Koppelen</button>
+</div>
+</div>
+</div>
+<div class="table-wrap facade-openings-list-wrap">
+<table>
+<thead>
+<tr>
+<th>Bron</th>
+<th>Afmeting</th>
+<th>Aantal</th>
+<th>Raamdorpel</th>
+<th>Omschrijving</th>
+<th></th>
+</tr>
+</thead>
+<tbody id="facade-openings-list">
+<tr class="empty-row">
+<td colspan="6">Nog geen openingen toegevoegd</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="facade-optional-block facade-extras-wrap">
+<summary>Gevelopties (optioneel)</summary>
+<p class="meta">Kies enkel opties die voor deze gevel van toepassing zijn.</p>
+<div class="extras-grid">
+<label class="field">
+<span>Dakgootbekleding</span>
+<select id="facade-gutter">
+<option value="none">Geen</option>
+<option value="trespa">Trespa</option>
+</select>
+</label>
+<label class="field">
+<span>Plinten</span>
+<select id="facade-plinths">
+<option value="none">Geen</option>
+<option value="blauwe-hardsteen">Blauwe hardsteen</option>
+<option value="watervaste-crepi">Watervaste crepi</option>
+</select>
+</label>
+<label class="field">
+<span>Afvoerbuis</span>
+<select id="facade-downpipe">
+<option value="none">Geen</option>
+<option value="zink">Zink</option>
+</select>
+</label>
+</div>
+</details>
+<div class="actions facade-actions">
+<button class="primary" type="submit">Gevel toevoegen</button>
+</div>
+<div class="facade-draft-total">
+<span>Totaal huidige gevel (incl. BTW)</span>
+<strong id="facade-draft-total-value">€ 0,00</strong>
+<small id="facade-draft-total-note"></small>
+</div>
+</form>
+<div class="facade-list" id="facade-body"></div>
+<div class="panel-step-total">
+<span>Totaal gevelrenovatie (incl. BTW)</span>
+<strong id="facade-step-total">€ 0,00</strong>
+<small id="facade-step-total-note"></small>
+</div>
+</section>
+<section class="panel wizard-step" data-step-key="roof" id="roof-panel">
+<div class="panel-header">
+<div>
+<p class="eyebrow">Dakwerken</p>
+<h2>Voeg dakwerken toe</h2>
+</div>
+<button class="ghost-button" id="reset-roof" type="button">Leeg maken</button>
+</div>
+<form class="roof-form" id="roof-form">
+<label class="field roof-type">
+<span>Type dak</span>
+<select id="roof-type" required="">
+<option value="flat">Plat dak</option>
+<option value="sloped">Schuin dak</option>
+</select>
+</label>
+<label class="field roof-system roof-flat-field">
+<span>Systeem</span>
+<select id="roof-system" required="">
+<option data-roof-type="flat" value="flat-epdm">EPDM</option>
+<option data-roof-type="flat" value="flat-roofing">Roofing</option>
+</select>
+</label>
+<label class="field roof-length roof-flat-field">
+<span>Lengte (cm)</span>
+<input id="roof-length" min="10" placeholder="Lengte in cm" step="1" type="number"/>
+</label>
+<label class="field roof-width roof-flat-field">
+<span>Breedte (cm)</span>
+<input id="roof-width" min="10" placeholder="Breedte in cm" step="1" type="number"/>
+</label>
+<label class="field roof-depth roof-sloped-field">
+<span>Diepte (cm)</span>
+<input id="roof-depth" min="10" placeholder="Horizontale diepte in cm" step="1" type="number"/>
+</label>
+<label class="field roof-height roof-sloped-field">
+<span>Hoogte (cm)</span>
+<input id="roof-height" min="10" placeholder="Nokhoogte in cm" step="1" type="number"/>
+</label>
+<label class="field roof-facade-width roof-sloped-field">
+<span>Breedte gevel (cm)</span>
+<input id="roof-facade-width" min="10" placeholder="Breedte gevel in cm" step="1" type="number"/>
+</label>
+<details class="facade-optional-block roof-options-wrap">
+<summary>Dakopties (optioneel)</summary>
+<p class="meta">Kies enkel opties die voor dit dak van toepassing zijn.</p>
+<div class="extras-grid roof-options-grid">
+<label class="field roof-solar">
+<span>Zonnepanelen</span>
+<select id="roof-solar">
+<option value="none">Geen zonnepanelen</option>
+<option value="panels">Zonnepanelen</option>
+<option value="panels-battery">Zonnepanelen met batterij</option>
+</select>
+</label>
+<label class="field roof-structure">
+<span>Constructie vervangen</span>
+<select id="roof-structure">
+<option value="false">Nee</option>
+<option value="true">Ja</option>
+</select>
+</label>
+<label class="field roof-insulation">
+<span>Isolatie</span>
+<select id="roof-insulation">
+<option value="none">Geen isolatie</option>
+<option value="mineral-wool">Minerale wol</option>
+<option value="pu">PU</option>
+</select>
+</label>
+<label class="field roof-gutter">
+<span id="roof-gutter-label">Dakopstanden vernieuwen</span>
+<select id="roof-gutter-renew">
+<option value="false">Nee</option>
+<option value="true">Ja</option>
+</select>
+</label>
+</div>
+</details>
+<div class="actions roof-actions">
+<button class="primary" type="submit">Dakwerk toevoegen</button>
+</div>
+<div class="roof-draft-total">
+<span>Totaal huidig dakwerk (incl. BTW)</span>
+<strong id="roof-draft-total-value">€ 0,00</strong>
+<small id="roof-draft-total-note"></small>
+</div>
+</form>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Systeem</th>
+<th>Oppervlakte</th>
+<th>Opties</th>
+<th>Totaal excl.</th>
+<th></th>
+</tr>
+</thead>
+<tbody id="roof-body">
+<tr class="empty-row">
+<td colspan="6">Nog geen dakwerken toegevoegd</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panel-step-total">
+<span>Totaal dakwerken (incl. BTW)</span>
+<strong id="roof-step-total">€ 0,00</strong>
+</div>
+</section>
+<section class="panel summary wizard-step" data-step-key="overview" id="summary-panel">
+<div class="panel-header">
+<div>
+<p class="eyebrow">Overzicht</p>
+<h2 data-simple-title="Totale prijs">Totale prijs</h2>
+</div>
+</div>
+<div class="final-overview-layout">
+<div class="overview-list" id="quote-mail-preview"></div>
+<section aria-labelledby="lead-intent-title" class="lead-intent-panel" hidden="">
+<p class="eyebrow">Volgende stap</p>
+<h3 id="lead-intent-title">Wat wil je hierna doen?</h3>
+<p class="meta">Zo kunnen we je aanvraag correct opvolgen.</p>
+<div aria-labelledby="lead-intent-title" class="lead-intent-options" role="radiogroup">
+<label class="lead-intent-option">
+<input checked="" name="lead-intent" type="radio" value="contact-me"/>
+<span><strong>Ik heb een project en wil meer uitleg</strong><small>Contacteer mij om de mogelijkheden te bespreken.</small></span>
+</label>
+<label class="lead-intent-option">
+<input name="lead-intent" type="radio" value="appointment-request"/>
+<span><strong>Ik wil een afspraak aan huis</strong><small>Voor een definitieve opmeting en adviesgesprek.</small></span>
+</label>
+<label class="lead-intent-option">
+<input name="lead-intent" type="radio" value="information-only"/>
+<span><strong>Ik wou enkel een richtprijs weten</strong></span>
+</label>
+</div>
+<section aria-labelledby="appointment-picker-title" hidden="" id="appointment-picker">
+<h4 id="appointment-picker-title">Kies je afspraakmoment</h4>
+<p class="meta">Maandag tot vrijdag, in blokken van twee uur. Het bezoek duurt gemiddeld één uur. We bellen je nog ter bevestiging.</p>
+<label class="field"><span>Volledig adres van het bezoek</span>
+<input autocomplete="street-address" id="appointment-address" maxlength="240" placeholder="Straat 12, 9000 Gent"/>
+</label>
+<p class="meta">Met huisnummer, postcode en gemeente. We controleren je adres via Digitaal Vlaanderen en tonen momenten die passen binnen onze dagplanning.</p>
+<button class="secondary" id="appointment-search" type="button">Bekijk beschikbare dagen</button>
+<p aria-live="polite" id="appointment-status" role="status"></p>
+<div aria-label="Beschikbare dagen" class="appointment-calendar" hidden="" id="appointment-calendar"></div>
+<section aria-labelledby="appointment-times-title" class="appointment-times" hidden="" id="appointment-times">
+<h5 id="appointment-times-title">Kies een uur</h5>
+<div aria-label="Beschikbare uren" class="appointment-time-options" id="appointment-time-options" role="radiogroup"></div>
+</section>
+<p class="meta">Je moment wordt pas vastgelegd wanneer je op ‘Mail overzicht’ klikt. Vind je geen passend moment? Kies ‘Ik heb een project en wil meer uitleg’; dan spreken we samen iets af.</p>
+</section>
+<label class="newsletter-consent-option newsletter-consent-overview">
+<input data-newsletter-consent="" type="checkbox"/>
+<span><strong>Ik wil de nieuwsbrief van Schijnpoort ontvangen</strong><small>Ontvang inspiratie, nieuws en handige tips per e-mail. Uitschrijven kan altijd.</small></span>
+</label>
+</section>
+</div>
+<button class="hidden" id="email-quote" type="button">Mail overzicht</button>
+</section>
+<section class="wizard-controls" id="wizard-controls"><div hidden="" id="advice-action"><a class="primary advice-link" href="https://schijnpoort.be/contact">Gratis advies aan huis</a></div>
+<div class="wizard-nav-actions">
+<button class="secondary" id="wizard-back" type="button">Vorige stap</button>
+<button class="primary" id="wizard-next" type="button">Volgende stap</button>
+</div>
+</section>
+</main>
+</div>
+<div aria-hidden="true" id="google-translate-element"></div>
+<script src="config.js"></script><script src="script.js?v=20261103-result-actions"></script></body>
+</html>
