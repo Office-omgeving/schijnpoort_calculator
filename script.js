@@ -1613,25 +1613,25 @@ const simpleElementTypes = [
     key: "fixed-window",
     label: "Vast raam",
     detail: "Vast raam zonder opening",
-    specs: [{ type: "raam", widthCm: 110, heightCm: 140, weightKg: 120, opening: "vast" }]
+    specs: [{ type: "raam", widthCm: 150, heightCm: 150, weightKg: 120, opening: "vast" }]
   },
   {
     key: "single-window",
     label: "Draai/kiep raam",
     detail: "Standaard draai/kiep raam",
-    specs: [{ type: "raam", widthCm: 120, heightCm: 145, weightKg: 140 }]
+    specs: [{ type: "raam", widthCm: 100, heightCm: 150, weightKg: 140 }]
   },
   {
     key: "double-window",
     label: "Dubbel raam",
     detail: "Twee delen naast elkaar",
-    specs: [{ type: "raam", widthCm: 220, heightCm: 145, weightKg: 190 }]
+    specs: [{ type: "raam", widthCm: 180, heightCm: 150, weightKg: 190 }]
   },
   {
     key: "triple-window",
     label: "Drievoudig raam",
     detail: "Drie delen naast elkaar",
-    specs: [{ type: "raam", widthCm: 330, heightCm: 145, weightKg: 240 }]
+    specs: [{ type: "raam", widthCm: 250, heightCm: 150, weightKg: 240 }]
   },
   {
     key: "single-door",
@@ -1649,7 +1649,7 @@ const simpleElementTypes = [
     key: "sliding-window",
     label: "Schuifraam",
     detail: "Schuifraam in PVC",
-    specs: [{ type: "schuifraam", widthCm: 360, heightCm: 220, weightKg: 320 }]
+    specs: [{ type: "schuifraam", widthCm: 250, heightCm: 220, weightKg: 320 }]
   },
   {
     key: "garage-door",
@@ -1658,6 +1658,20 @@ const simpleElementTypes = [
     specs: [{ type: "poort", widthCm: 260, heightCm: 220, weightKg: 140 }]
   }
 ];
+
+// Prijzen van Igor (middelpunt, excl. btw) per producttype; vork = middelpunt -10% / +10% (Wannes, Wrike 11/11/2026).
+const SIMPLE_RANGE_SPREAD = 0.10;
+const simpleMidpointPrices = {
+  "fixed-window": 1010,
+  "single-window": 900,
+  "double-window": 1205,
+  "triple-window": 1575,
+  "single-door": 1510,
+  "door-with-sidelight": 2370,
+  "sliding-window": 3420,
+  "garage-door": 2450
+};
+const SIMPLE_INCLUSIONS_NOTE = "Allemaal inclusief standaard witte kleur PVC dubbel glas, hoogrendementsbeglazing + veiligheidsglas, afbraak, plaatsing, siliconeren, afwerking binnen (MDF) en alles excl. btw.";
 
 function simpleElementQuantityField(key) {
   return document.getElementById(`simple-element-${key}`);
@@ -1733,7 +1747,7 @@ function formatSimpleRange(low, high) {
 
 function calculateSimpleEstimate() {
   const selection = currentSimpleSelection();
-  const vatRate = selection.oldHouse ? 0.06 : 0.21;
+  const vatRate = 0; // prijzen van Igor zijn excl. btw; btw wordt niet meer opgeteld
   const rows = [];
   let lowExcl = 0;
   let highExcl = 0;
@@ -1751,27 +1765,27 @@ function calculateSimpleEstimate() {
     }));
     const carpentryLow = detailedTypes.reduce((sum, type) => sum + type.breakdown.carpentry * type.quantity, 0);
     const servicesLow = detailedTypes.reduce((sum, type) => sum + type.breakdown.services * type.quantity, 0);
-    const low = carpentryLow + servicesLow;
-    const high = low;
+    const midpointTotal = detailedTypes.reduce((sum, type) => sum + simpleMidpointPrices[type.key] * type.quantity, 0);
+    const low = midpointTotal * (1 - SIMPLE_RANGE_SPREAD);
+    const high = midpointTotal * (1 + SIMPLE_RANGE_SPREAD);
     lowExcl += low;
     highExcl += high;
     detailedTypes.forEach((type) => {
-      const typeLow = type.breakdown.total * type.quantity;
+      const typeMid = simpleMidpointPrices[type.key] * type.quantity;
+      const typeLow = typeMid * (1 - SIMPLE_RANGE_SPREAD);
+      const typeHigh = typeMid * (1 + SIMPLE_RANGE_SPREAD);
       const dimensions = type.specs
         .map((spec) => `${Math.round(spec.widthCm * 10)} × ${Math.round(spec.heightCm * 10)} mm`)
         .join(" + ");
       rows.push({
         label: `${type.quantity}× ${type.label}`,
         detail: `${dimensions} · PVC wit binnen/buiten · dubbel glas · MDF`,
-        assumptions: [
-          `Schrijnwerk: ${formatCurrency(type.breakdown.carpentry * type.quantity)} excl. BTW.`,
-          `Diensten: ${formatCurrency(type.breakdown.services * type.quantity)} excl. BTW (afbraak en recyclage, plaatsing, siliconeren en MDF-afwerking).`
-        ],
+        assumptions: [SIMPLE_INCLUSIONS_NOTE],
         low: typeLow,
-        high: typeLow,
+        high: typeHigh,
         quantity: type.quantity,
-        unitLow: type.breakdown.total,
-        unitHigh: type.breakdown.total,
+        unitLow: simpleMidpointPrices[type.key] * (1 - SIMPLE_RANGE_SPREAD),
+        unitHigh: simpleMidpointPrices[type.key] * (1 + SIMPLE_RANGE_SPREAD),
         carpentryLow: type.breakdown.carpentry * type.quantity,
         servicesLow: type.breakdown.services * type.quantity,
         pricing: {
@@ -1841,6 +1855,7 @@ function calculateSimpleEstimate() {
     totalLowIncl: formatCurrency(totalLowIncl),
     totalHighIncl: formatCurrency(totalHighIncl),
     totalRangeIncl: formatSimpleRange(totalLowIncl, totalHighIncl),
+    totalLowInclRaw: totalLowIncl,
     totalHighInclRaw: totalHighIncl
   };
   const supportBreakdown = simpleSupportBreakdown(estimate);
@@ -1861,8 +1876,8 @@ function updateSimpleEstimatePreview() {
   const estimate = calculateSimpleEstimate();
   simpleLiveEstimateEl.innerHTML = `
     <span>Indicatieve totaalprijs voor ${totalElements} ${totalElements === 1 ? "element" : "elementen"}</span>
-    <strong>${estimate.totalRangeIncl}</strong>
-    <small>incl. btw, op basis van standaard PVC wit, driedubbel glas en MDF binnenafwerking</small>
+    <strong>${formatCustomerEuro(estimate.totalLowInclRaw)} – ${formatCustomerEuro(estimate.totalHighInclRaw)}</strong>
+    <small>excl. btw, inclusief afbraak, plaatsing, siliconeren en MDF-afwerking</small>
   `;
 }
 
@@ -1987,25 +2002,31 @@ function simpleSupportIncomeNote() {
   ].join(" ");
 }
 
-function customerPriceBounds(totalIncl) {
-  const total = Math.max(0, Number(totalIncl) || 0);
-  return { lower: total * 0.85, upper: total };
+// Klantbedrag: hele euro's zonder decimalen, centen alleen als ze er zijn (bv. 1.084,50).
+function formatCustomerEuro(value) {
+  const rounded = Math.round((Number(value) || 0) * 100) / 100;
+  const hasCents = Math.abs(rounded - Math.round(rounded)) > 0.0001;
+  return new Intl.NumberFormat("nl-BE", {
+    style: "currency", currency: "EUR",
+    minimumFractionDigits: hasCents ? 2 : 0, maximumFractionDigits: 2
+  }).format(rounded);
+}
+
+function customerPriceBounds(totalLow, totalHigh) {
+  return { lower: Math.max(0, Number(totalLow) || 0), upper: Math.max(0, Number(totalHigh) || 0) };
 }
 
 function renderSimpleQuoteStyle() {
   if (!quoteMailPreviewEl) return;
   const estimate = calculateSimpleEstimate();
-  const range = customerPriceBounds(estimate.totalHighInclRaw);
-  const euro = (value) => new Intl.NumberFormat("nl-BE", {
-    style: "currency", currency: "EUR", maximumFractionDigits: 0
-  }).format(value);
-  const lower = euro(Math.floor(range.lower));
-  const upper = euro(Math.ceil(range.upper));
+  const range = customerPriceBounds(estimate.totalLowInclRaw, estimate.totalHighInclRaw);
+  const lower = formatCustomerEuro(range.lower);
+  const upper = formatCustomerEuro(range.upper);
   quoteMailPreviewEl.innerHTML = `
     <div class="overview-total-card customer-total" aria-label="Totale indicatieve prijsvork">
       <div class="customer-total-heading">Jouw totale richtprijs</div>
       <p class="customer-total-price">${escapeHtml(lower)} – ${escapeHtml(upper)}</p>
-      <p class="customer-total-tax">Inclusief ${Math.round(estimate.vatRate * 100)}% btw</p>
+      <p class="customer-total-tax">${escapeHtml(SIMPLE_INCLUSIONS_NOTE)}</p>
       <p class="customer-total-note">Indicatieve prijsvork op basis van standaardmaten en je gekozen aantallen. De definitieve offerte volgt na opmeting en technische controle en kan afwijken.</p>
     </div>`;
 }
