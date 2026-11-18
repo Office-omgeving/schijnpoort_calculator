@@ -18,7 +18,7 @@
 
 .final-overview-layout{grid-template-columns:minmax(0,1fr)}
 
-.customer-total{padding:24px}.customer-total-heading{font-size:18px;font-weight:700;color:#120d4f}.customer-total-price{font-size:clamp(26px,4vw,38px);font-weight:700;color:#a95528;margin:16px 0 8px;font-variant-numeric:tabular-nums;line-height:1.25}.customer-total-tax{font-size:14px;font-weight:600;margin:0}.customer-total-note{max-width:65ch;font-size:14px;line-height:1.6;margin:20px 0 0;color:#5c426c}
+.customer-total{padding:24px}.customer-total-heading{font-size:18px;font-weight:700;color:#120d4f}.customer-total-price{font-size:clamp(26px,4vw,38px);font-weight:700;color:#a95528;margin:16px 0 8px;font-variant-numeric:tabular-nums;line-height:1.25}.customer-total-tax{font-size:14px;font-weight:600;margin:0}.customer-total-tax+.customer-total-tax{margin-top:8px}.customer-total-note{max-width:65ch;font-size:14px;line-height:1.6;margin:20px 0 0;color:#5c426c}
 
 @media screen and (max-width: 700px) {
   html { scroll-padding-bottom: calc(100px + env(safe-area-inset-bottom, 0px)); }

@@ -61,7 +61,7 @@ Bron: prijzen van Igor (Schijnpoort), doorgegeven door Wannes in Wrike op 11 nov
 | Schuifraam | 2500 × 2200 mm | € 3.420 | € 3.078 – € 3.762 |
 | Garagepoort (alu sectionaal, elektrisch) | 2600 × 2200 mm | € 2.450 | € 2.205 – € 2.695 |
 
-Bij meerdere elementen worden de middelpunten opgeteld (× aantal) en wordt op het totaal −10% / +10% genomen. Onder de prijs staat: "Allemaal inclusief standaard witte kleur PVC dubbel glas, hoogrendementsbeglazing + veiligheidsglas, afbraak, plaatsing, siliconeren, afwerking binnen (MDF) en alles excl. btw." De woningvraag (ouder/jonger dan 10 jaar) blijft als leadinformatie, maar heeft geen invloed op de prijs. De sheetfuncties staan nog in `script.js` maar bepalen de klantprijs niet meer.
+Bij meerdere elementen worden de middelpunten opgeteld (× aantal) en wordt op het totaal −10% / +10% genomen. Onder de prijs staat: "Allemaal inclusief standaard witte kleur PVC dubbel glas, hoogrendementsbeglazing + veiligheidsglas, afbraak, plaatsing, siliconeren, afwerking binnen (MDF) en alles excl. btw." Bij een garagepoort staat in plaats daarvan (of bij een gemengd project erbij): "Garagepoort: elektrisch bediende aluminium sectionaalpoort, excl. btw." (Wannes, Wrike 12/11/2026). De woningvraag (ouder/jonger dan 10 jaar) blijft als leadinformatie, maar heeft geen invloed op de prijs. De sheetfuncties staan nog in `script.js` maar bepalen de klantprijs niet meer.
 
 ## Controles
 
@@ -72,7 +72,7 @@ npm test
 npm run check
 ```
 
-De prijscontrole toetst per producttype het middelpunt, de vork bij aantallen 1/2/5 (met elk antwoord op de woningvraag), de getoonde bedragen tegen Wannes' vorken, een gemengd project en een lege selectie: 227 controles.
+De prijscontrole toetst per producttype het middelpunt, de vork bij aantallen 1/2/5 (met elk antwoord op de woningvraag), de getoonde bedragen tegen Wannes' vorken, een gemengd project, de zinnen onder de prijs (met en zonder garagepoort) en een lege selectie.
 
 ## Gegevens en koppelingen
 
