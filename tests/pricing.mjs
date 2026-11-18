@@ -19,7 +19,7 @@ const expected = {
 };
 const note = 'Allemaal inclusief standaard witte kleur PVC dubbel glas, hoogrendementsbeglazing + veiligheidsglas, afbraak, plaatsing, siliconeren, afwerking binnen (MDF) en alles excl. btw.';
 
-const names = ['effectiveItemDimensionsCm','isWindowDoorType','areaInM2','perimeterInLm','finishingPerimeterLm','isAluminiumSystem','isTripleWeightSystem','windowFormulaBasePrice','colorMultiplier','openingMultiplier','glassPriceMultiplier','elementUnitBasePrice','legacyElementUnitPrice','elementUnitBaseCost','elementUnitPrice','linePrice','effectiveFinishing','finishingEntriesForItem','mdfFinishingTier','pvcFinishingTier','plasterFinishingTier','shutterUnitPrice','formulaWeightKg','itemWeightKg','pickTierByWeight','montageTierForItem','itemDirectCostParts','simpleItemSpec','simpleItemUnitBreakdown','simpleElementTypeBreakdown','formatSimpleRange','calculateSimpleEstimate','formatCustomerEuro','customerPriceBounds'];
+const names = ['effectiveItemDimensionsCm','isWindowDoorType','areaInM2','perimeterInLm','finishingPerimeterLm','isAluminiumSystem','isTripleWeightSystem','windowFormulaBasePrice','colorMultiplier','openingMultiplier','glassPriceMultiplier','elementUnitBasePrice','legacyElementUnitPrice','elementUnitBaseCost','elementUnitPrice','linePrice','effectiveFinishing','finishingEntriesForItem','mdfFinishingTier','pvcFinishingTier','plasterFinishingTier','shutterUnitPrice','formulaWeightKg','itemWeightKg','pickTierByWeight','montageTierForItem','itemDirectCostParts','simpleItemSpec','simpleItemUnitBreakdown','simpleElementTypeBreakdown','formatSimpleRange','calculateSimpleEstimate','formatCustomerEuro','customerPriceBounds','simpleInclusionNotes'];
 const funcs = names.map((name) => {
   const m = src.match(new RegExp('^function ' + name + '\\([^]*?^}', 'm'));
   assert.ok(m, name);
@@ -29,7 +29,7 @@ const constants = src.slice(src.indexOf('const MIN_ITEM_DIMENSION_MM'), src.inde
 const typesSource = src.slice(src.indexOf('const simpleElementTypes = ['), src.indexOf('function simpleElementQuantityField'));
 const context = vm.createContext({});
 vm.runInContext(fs.readFileSync('config.js', 'utf8').replace('window.QUOTE_BUILDER_CONFIG', 'globalThis.config'), context);
-vm.runInContext('const quoteBuilderConfig=config;function isFacadeRenovationActive(){return false}function sealantRatePerLm(){return 7}function formatCurrency(n){return Number(n).toFixed(2)}function currentSimpleSelection(){return globalThis.selection}function simpleSupportBreakdown(){return {combinedRows:[],premiumRows:[],loanRows:[]}}function simpleSupportIncomeNote(){return ""}\n' + constants + '\n' + typesSource + '\n' + funcs + '\nglobalThis.SIMPLE_INCLUSIONS_NOTE=SIMPLE_INCLUSIONS_NOTE;globalThis.simpleMidpointPrices=simpleMidpointPrices;', context);
+vm.runInContext('const quoteBuilderConfig=config;function isFacadeRenovationActive(){return false}function sealantRatePerLm(){return 7}function formatCurrency(n){return Number(n).toFixed(2)}function currentSimpleSelection(){return globalThis.selection}function simpleSupportBreakdown(){return {combinedRows:[],premiumRows:[],loanRows:[]}}function simpleSupportIncomeNote(){return ""}\n' + constants + '\n' + typesSource + '\n' + funcs + '\nglobalThis.SIMPLE_INCLUSIONS_NOTE=SIMPLE_INCLUSIONS_NOTE;globalThis.SIMPLE_GARAGE_NOTE=SIMPLE_GARAGE_NOTE;globalThis.simpleMidpointPrices=simpleMidpointPrices;', context);
 
 const types = vm.runInContext('simpleElementTypes', context);
 const euro = (v) => vm.runInContext(`formatCustomerEuro(${v})`, context).replace(/ /g, ' ');
@@ -65,9 +65,18 @@ const mixed = vm.runInContext('calculateSimpleEstimate()', context);
 const mixedMid = types.reduce((s, t, i) => s + expected[t.key].mid * (i + 1), 0);
 assert.ok(close(mixed.totalLowInclRaw, mixedMid * 0.9) && close(mixed.totalHighInclRaw, mixedMid * 1.1), 'gemengd project'); checks++;
 
+// Zinnen onder de prijs (Wannes 12/11): PVC-zin bij ramen/deuren, aparte zin bij de garagepoort.
+const garageNote = 'Garagepoort: elektrisch bediende aluminium sectionaalpoort, excl. btw.';
+assert.equal(context.SIMPLE_GARAGE_NOTE, garageNote); checks++;
+const notesFor = (q) => { context.q = q; return JSON.stringify(vm.runInContext('simpleInclusionNotes(q)', context)); };
+assert.equal(notesFor({ 'double-window': 1 }), JSON.stringify([note]), 'alleen ramen: PVC-zin'); checks++;
+assert.equal(notesFor({ 'garage-door': 1 }), JSON.stringify([garageNote]), 'alleen garagepoort: geen PVC-zin'); checks++;
+assert.equal(notesFor({ 'garage-door': 2, 'single-door': 1 }), JSON.stringify([note, garageNote]), 'gemengd: beide zinnen'); checks++;
+assert.equal(notesFor({ 'garage-door': 0, 'fixed-window': 3 }), JSON.stringify([note]), 'garagepoort 0: geen garagezin'); checks++;
+
 // Geen selectie: 0.
 context.selection = { modules: { items: true }, oldHouse: false, elementQuantities: {} };
 const empty = vm.runInContext('calculateSimpleEstimate()', context);
 assert.equal(empty.totalHighInclRaw, 0); checks++;
 
-console.log(`PASS: ${checks} controles; 8 types, aantallen 1/2/5, leeftijd woning zonder invloed, getoonde vorken = Wannes, gemengd project.`);
+console.log(`PASS: ${checks} controles; 8 types, aantallen 1/2/5, leeftijd woning zonder invloed, getoonde vorken = Wannes, gemengd project, zin garagepoort.`);

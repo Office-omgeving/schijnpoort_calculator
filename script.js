@@ -1672,6 +1672,20 @@ const simpleMidpointPrices = {
   "garage-door": 2450
 };
 const SIMPLE_INCLUSIONS_NOTE = "Allemaal inclusief standaard witte kleur PVC dubbel glas, hoogrendementsbeglazing + veiligheidsglas, afbraak, plaatsing, siliconeren, afwerking binnen (MDF) en alles excl. btw.";
+// Aparte zin voor de garagepoort (Wannes, Wrike 12/11/2026): de PVC-zin klopt daar niet.
+const SIMPLE_GARAGE_KEY = "garage-door";
+const SIMPLE_GARAGE_NOTE = "Garagepoort: elektrisch bediende aluminium sectionaalpoort, excl. btw.";
+
+// Welke zinnen onder de totale prijs horen: PVC-zin bij ramen/deuren, garagezin bij een garagepoort.
+function simpleInclusionNotes(elementQuantities) {
+  const quantities = elementQuantities || {};
+  const hasGarage = (Number(quantities[SIMPLE_GARAGE_KEY]) || 0) > 0;
+  const hasOther = Object.entries(quantities).some(([key, qty]) => key !== SIMPLE_GARAGE_KEY && (Number(qty) || 0) > 0);
+  const notes = [];
+  if (hasOther || !hasGarage) notes.push(SIMPLE_INCLUSIONS_NOTE);
+  if (hasGarage) notes.push(SIMPLE_GARAGE_NOTE);
+  return notes;
+}
 
 function simpleElementQuantityField(key) {
   return document.getElementById(`simple-element-${key}`);
@@ -1780,7 +1794,7 @@ function calculateSimpleEstimate() {
       rows.push({
         label: `${type.quantity}× ${type.label}`,
         detail: `${dimensions} · PVC wit binnen/buiten · dubbel glas · MDF`,
-        assumptions: [SIMPLE_INCLUSIONS_NOTE],
+        assumptions: [type.key === SIMPLE_GARAGE_KEY ? SIMPLE_GARAGE_NOTE : SIMPLE_INCLUSIONS_NOTE],
         low: typeLow,
         high: typeHigh,
         quantity: type.quantity,
@@ -2026,7 +2040,7 @@ function renderSimpleQuoteStyle() {
     <div class="overview-total-card customer-total" aria-label="Totale indicatieve prijsvork">
       <div class="customer-total-heading">Jouw totale richtprijs</div>
       <p class="customer-total-price">${escapeHtml(lower)} – ${escapeHtml(upper)}</p>
-      <p class="customer-total-tax">${escapeHtml(SIMPLE_INCLUSIONS_NOTE)}</p>
+      ${simpleInclusionNotes(estimate.selection.elementQuantities).map((note) => `<p class="customer-total-tax">${escapeHtml(note)}</p>`).join("")}
       <p class="customer-total-note">Indicatieve prijsvork op basis van standaardmaten en je gekozen aantallen. De definitieve offerte volgt na opmeting en technische controle en kan afwijken.</p>
     </div>`;
 }
